@@ -1,10 +1,5 @@
 .hero--home {
-    padding-top: 167px;
     position: relative;
-
-    @include responsive('mobile-h') {
-        padding-top: 155px;
-    }
 
     .content {
         display: flex;

@@ -21,3 +21,18 @@
 
  do_action( 'palermo_pre_render_block', $block );
 ?>
+
+<section class="accordion accordion--faqs">
+    <div class="container">
+        <div class="accordion__cont">
+            <?php while (have_rows('faqs')): the_row();
+                if ($question = get_sub_field('question')): ?>
+                    <div class="accordion__item">
+                        <h3 class="accordion__question h3 js-accordion-open" tabindex="0"><?php echo $question; ?></h3>
+                        <?php echo ($answer = get_sub_field('answer')) ? '<div class="accordion__answer">' . $answer . '</div>' : ''; ?>
+                    </div>
+                <?php endif;
+            endwhile; ?>
+        </div>
+    </div>
+</section>

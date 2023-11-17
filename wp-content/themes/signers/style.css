@@ -376,7 +376,7 @@ strong * {
 }
 
 .container {
-				max-width: 1215px;
+				max-width: 1980px;
 				margin: 0 auto;
 				padding: 0 30px;
 				width: 100%;
@@ -409,6 +409,24 @@ strong * {
 				left: 0;
 				width: 100%;
 				height: 100%;
+}
+
+.btn-whatsapp {
+				position: fixed;
+				bottom: 30px;
+				right: 30px;
+				height: 50px;
+				width: 50px;
+				border-radius: 50%;
+				background: #25d366;
+				text-align: center;
+				display: inline-block;
+				line-height: 50px;
+				color: #fff;
+				font-size: 30px;
+				-webkit-box-shadow: #333 0 0 10px;
+				        box-shadow: #333 0 0 10px;
+				z-index: 1000;
 }
 
 .header .site-menu {
@@ -1619,13 +1637,7 @@ select option {
 }
 
 .hero--home {
-				padding-top: 167px;
 				position: relative;
-}
-@media only screen and (max-width: 768px) {
-				.hero--home {
-								padding-top: 155px;
-				}
 }
 .hero--home .content {
 				display: -webkit-box;
