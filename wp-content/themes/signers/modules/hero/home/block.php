@@ -22,30 +22,33 @@
  ?>
 
 <?php 
+$video = get_field('video');
 $image = get_field('image');
 $title = get_field('title');
-$subtitle = get_field('subtitle');
-$text = get_field('text');
+$media_type = get_field('video_o_imagen'); 
 ?>
 
 <!-- Hero Home -->
 <section class="wrapper wrapper--hero">
     <section class="hero hero--home">
         <div class="container">
-            <div class="content">
-                <div class="hero__text">
-					<?php echo empty($title)? '':'<h1 class="title">'.esc_html($title).'</h1>'; ?>
-					<?php echo empty($subtitle)? '':'<h3 class="uppertitle">'.esc_html($subtitle).'</h3>'; ?>
-					<?php echo empty($text)? '':''.wp_kses_post($text).''; ?>
+            <?php if ($media_type && $video): ?>
+                <div class="hero__video">
+                    <video autoplay muted loop>
+                        <source src="<?php echo esc_url($video['url']); ?>" type="<?php echo esc_attr($video['mime_type']); ?>">
+                    </video>
                 </div>
-				<?php if($image): ?>
-					<div class="hero__image">
-						<div class="image-background">
-							<?php get_template_part('modules/components/image', null, ['image' => $image]); ?>
-						</div>
-					</div>
-				<?php endif; ?>
+            <?php elseif (!$media_type && $image): ?>
+                <div class="hero__image">
+                    <div class="image-background">
+                        <?php get_template_part('modules/components/image', null, ['image' => $image]); ?>
+                    </div>
+                </div>
+            <?php endif; ?>
+
+            <div class="hero__text">
+                <?php echo empty($title) ? '' : '<h1 class="title">' . esc_html($title) . '</h1>'; ?>
             </div>
-        </div>  
+        </div>
     </section>
 </section>

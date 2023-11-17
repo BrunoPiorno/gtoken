@@ -3,11 +3,11 @@
     "title": "Block: Hero",
     "fields": [
         {
-            "key": "field_65006fe418a05",
-            "label": "Block Column",
-            "name": "",
+            "key": "field_6557970f6b2eb",
+            "label": "Media Type",
+            "name": "video_o_imagen",
             "aria-label": "",
-            "type": "column",
+            "type": "true_false",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,19 +16,59 @@
                 "class": "",
                 "id": ""
             },
-            "column-type": "1_3"
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "Video",
+            "ui_off_text": "Imagen",
+            "ui": 1
         },
         {
             "key": "field_6500704718a06",
+            "label": "Video",
+            "name": "video",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6557970f6b2eb",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6557955b6b2ea",
             "label": "Image",
             "name": "image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 1,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6557970f6b2eb",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
-                "width": "",
+                "width": "40",
                 "class": "",
                 "id": ""
             },
@@ -44,48 +84,12 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_6500706518a07",
-            "label": "Block Column",
-            "name": "",
-            "aria-label": "",
-            "type": "column",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "column-type": "2_3"
-        },
-        {
             "key": "field_6500707c18a08",
             "label": "Title",
             "name": "title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_6500708418a09",
-            "label": "Subtitle",
-            "name": "subtitle",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -98,26 +102,6 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
-        },
-        {
-            "key": "field_6500708b18a0a",
-            "label": "Text",
-            "name": "text",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "rows": 2,
-            "placeholder": "",
-            "new_lines": "wpautop"
         }
     ],
     "location": [
@@ -138,5 +122,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1694527645
+    "modified": 1700239352
 }

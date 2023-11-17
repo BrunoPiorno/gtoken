@@ -36,14 +36,6 @@ $text = ( !empty($text) ) ? $text : '';
 			</div>
 		</div>
 
-		<div class="footer-logo">
-			<div class="logo-br">
-				<a href="https://bracketmedia.com/" target="_blank" role="link">
-					<img src="<?php echo get_template_directory_uri();?>/images/icons/logo-bracketmedia.svg" alt="Bracket">
-				</a>
-			</div>
-		</div>
-
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->

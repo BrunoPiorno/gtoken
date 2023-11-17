@@ -26,46 +26,6 @@
             "max_size": "",
             "mime_types": "svg",
             "preview_size": "medium"
-        },
-        {
-            "key": "field_64d4c6820a1a2",
-            "label": "Number",
-            "name": "number",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_64d4c6980a1a4",
-            "label": "Text",
-            "name": "text",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "rows": 3,
-            "placeholder": "",
-            "new_lines": "br"
         }
     ],
     "location": [
@@ -86,5 +46,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695068513
+    "modified": 1700233395
 }
