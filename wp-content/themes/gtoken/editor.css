@@ -521,14 +521,6 @@ Blocks Styles
 				        transition-delay: 0s;
 				cursor: pointer;
 }
-.editor-styles-wrapper .acf-block-preview .header .site-menu__first-level::before {
-				content: "";
-				background: url(images/icons/point.svg) no-repeat center right/contain;
-				width: 4px;
-				height: 4px;
-				margin-right: 9px;
-				display: inline-block;
-}
 .editor-styles-wrapper .acf-block-preview .header .site-menu__first-level:hover {
 				color: #54A8C7;
 }

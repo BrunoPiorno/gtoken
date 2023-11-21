@@ -484,14 +484,6 @@ strong * {
 				        transition-delay: 0s;
 				cursor: pointer;
 }
-.header .site-menu__first-level::before {
-				content: "";
-				background: url(images/icons/point.svg) no-repeat center right/contain;
-				width: 4px;
-				height: 4px;
-				margin-right: 9px;
-				display: inline-block;
-}
 .header .site-menu__first-level:hover {
 				color: #54A8C7;
 }

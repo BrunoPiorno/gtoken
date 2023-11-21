@@ -37,17 +37,6 @@
 			@include tre(.5s);
 			cursor: pointer;
 
-			&::before {
-				content: "";
-				background: url(images/icons/point.svg) no-repeat center right/contain;
-				width: 4px;
-				height: 4px;
-				margin-right: 9px;
-				display: inline-block;
-
-
-			}
-
 			&:hover {
 				color: $secondary-color;
 			}
