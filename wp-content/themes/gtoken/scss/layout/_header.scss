@@ -6,6 +6,15 @@
 	height: 195px;
 	z-index: 10;
 
+	/* &::after {
+		content: "";
+		@include absolute();
+		background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.0001)));
+		background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
+		z-index: 1;
+		height: 200px;
+	} */
+
 	@include responsive('mobile-h') {
 		height: 100px;
 	}

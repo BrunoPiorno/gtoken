@@ -37,16 +37,21 @@ $media_type = get_field('video_o_imagen');  ?>
                 </video>
             </div>
         <?php elseif (!$media_type && $image): ?>
-            <div class="hero__image">
-                <div class="image-background">
-                    <?php get_template_part('modules/components/image', null, ['image' => $image]); ?>
+           
+                <div class="hero__image">
+                    <div class="image-background">
+                        <?php get_template_part('modules/components/image', null, ['image' => $image]); ?>
+                    </div>
                 </div>
-            </div>
+           
         <?php endif; ?>
         <div class="hero__text">
             <div class="container">
                 <?php echo empty($title) ? '' : '<h1 class="title">' . esc_html($title) . '</h1>'; ?>
             </div>
-        </div>
+        </div> 
     </section>
 </section>
+
+
+
