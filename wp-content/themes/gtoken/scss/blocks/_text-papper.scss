@@ -1,0 +1,43 @@
+.text-papper {
+    padding-top: rv(60px, 100px);
+    padding-bottom: rv(60px, 100px);
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+
+        @include responsive('tablet-h') {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__text {
+            .title {
+                font-size: rv(30px, 60px);
+                color: $secondary-color;
+                line-height: 1.2;
+                font-weight: 600;
+                text-transform: uppercase;
+
+                span {
+                    color: #000;
+                    font-style: italic;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        &__link {
+            a {
+                font-size: rv(18px, 22px);
+                text-decoration: none;
+
+                span {}
+            }
+        }
+    }
+}
