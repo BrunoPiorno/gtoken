@@ -41,10 +41,15 @@
         </div>
 
 
-        <?php
-        if ($video_youtube = get_field('video_youtube')) {
-            echo '<div class="number_grid__link">Mira nuestro <a href="' . esc_url($pdf_link) . '" target="_blank">Video Explicativo</a></div>';
-        } ?>
+        <?php if ($video_youtube = get_field('video_youtube')) {
+        $url = esc_url($video_youtube['url']);
+        $target = esc_attr($video_youtube['target']);
+        $title = esc_html($video_youtube['title']);
+        
+        echo '<div class="number_grid__link">Mira nuestro <a href="' . $url . '" target="' . $target . '">' . $title . '</a></div>';
+    } ?>
+
+
     </div>
 </section>
 

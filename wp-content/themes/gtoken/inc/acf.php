@@ -5,7 +5,7 @@ $settings_pages = [
 	'settings' => 'General', 
 	'analytics' => 'Analytics', 
 	'menu' => 'Menu',
-	'footermenu' => 'Footer Menu',
+	'footermenu' => 'Footer',
 	'404' => 'Error 404'
 ];
 

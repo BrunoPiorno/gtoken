@@ -52,9 +52,17 @@ $text = ( !empty($text) ) ? $text : '';
 			        <?php } ?>
                 </div> 
 
-                <div class="content__link"><!-- Duro -->
-                    <a href="#">Lee nuestro <span>White Papper</span></a>
-                </div>
+                <?php
+                $text_pdf = get_field('text_pdf');
+                $white_papper = get_field('white_papper');
+
+                if ($white_papper) {
+                    $pdf_url = esc_url($white_papper['url']);
+                    $pdf_title = esc_html($white_papper['title']);
+
+                    echo '<div class="content__link"><a href="' . $pdf_url . '" target="_blank">' . esc_html($text_pdf) . '</a></div>';
+                } ?>
+
             </div>
         </div>
     </section>

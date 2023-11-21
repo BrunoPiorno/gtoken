@@ -1,12 +1,4 @@
-<?php
 
-$number = get_field('number', 'options');
-$number = ( !empty($number) ) ? $number : '';
-
-$text = get_field('text', 'options');
-$text = ( !empty($text) ) ? $text : '';
-
-?>
 
 		</main><!-- #content -->
 
@@ -17,23 +9,25 @@ $text = ( !empty($text) ) ? $text : '';
 					<?php get_template_part('modules/components/site-logo',null, ['footer' => true] ); ?>
 				</div>
 
-				<div class="site-footer__content-column">
-					<?php get_template_part('modules/components/menu'); ?>
-				</div>
-			</div>
-			<div class="site-footer-bottom">
-				<?php if (!empty($text)) {?>
-					<p>
-						<?php echo wp_kses_post($text); ?>
-					</p>
-				<?php } ?>
+			
+				<div class="site-footer__logo-column">
+					<?php get_template_part('modules/components/copyright',null, ['footer' => true] ); ?>
+					<?php echo ($direccion = get_field('direccion','option'))? '<div class="direccion">'.$direccion.'</div>':''; ?>
+					<?php if ($email = get_field('email', 'option')) {
+						echo '<div class="email"><a href="mailto:' . esc_html($email) . '">' . esc_html($email) . '</a></div>';
+					} 		
 
-				<?php if (!empty($number)) {?>
-					<p>
-						<?php echo wp_kses_post($number); ?>
-					</p>
-				<?php } ?>
+					if ($white_papper = get_field('white_papper', 'option')) {
+						$pdf_url = esc_url($white_papper['url']);
+						$pdf_title = esc_html($white_papper['title']);
+
+						echo '<div class="content__link"><a href="' . $pdf_url . '" target="_blank">' . esc_html($pdf_title) . '</a></div>';
+					} 
+					get_template_part('modules/components/socials',null, ['footer' => true] ); ?>
+				</div>
+
 			</div>
+			
 		</div>
 
 	</footer><!-- #colophon -->
