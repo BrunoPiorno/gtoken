@@ -1,0 +1,45 @@
+{
+    "key": "group_655cef83bc1b3",
+    "title": "Block: Text Papper",
+    "fields": [
+        {
+            "key": "field_655cef84d27d3",
+            "label": "title",
+            "name": "title",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "[Para cambiar de estilo]",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": "br"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/text-papper"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1700589508
+}
