@@ -97,7 +97,6 @@
 			</div>
 		<?php endforeach; ?>
 
-		<?php get_template_part('modules/header/account'); ?>
-		<?php get_template_part('modules/header/search'); ?>
+		<?php pll_the_languages( array( 'show_flags' => 1,'show_names' => 0 ) );  ?>
 	</div>
 <?php endif; ?>
