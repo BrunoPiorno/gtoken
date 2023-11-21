@@ -24,18 +24,25 @@
 <section class="number_grid">
     <div class="container">
         <div class="number_grid__cont">
-            <?php if( $repeater_data = get_field('repeater_data')):
+            <?php $counter = 1;
+
+            if ($repeater_data = get_field('repeater_data')):
                 foreach ($repeater_data as $item) : ?>
                     <div class="number_grid__item">
-                        <div class="number_cont"><span class="number"><?php echo esc_html($item['number']); ?></span><span class="number_text"><?php echo esc_html($item['title']); ?></span></div>
+                        <div class="number_cont">
+                            <span class="number"><?php echo esc_html($counter); ?></span>
+                            <span class="number_text"><?php echo esc_html($item['title']); ?></span>
+                        </div>
                         <div class="number_content"><?php echo esc_html($item['content']); ?></div>
                     </div>
-                <?php endforeach;
+                    <?php $counter++; 
+                endforeach;
             endif; ?>
         </div>
 
+
         <?php
-        if ($pdf_link = get_field('pdf_link')) {
+        if ($video_youtube = get_field('video_youtube')) {
             echo '<div class="number_grid__link">Mira nuestro <a href="' . esc_url($pdf_link) . '" target="_blank">Video Explicativo</a></div>';
         } ?>
     </div>
