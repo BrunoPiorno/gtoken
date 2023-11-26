@@ -6,7 +6,7 @@
     .content {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
         justify-content: center;
         align-items: flex-start;
 
@@ -22,21 +22,52 @@
                 line-height: 1.2;
                 font-weight: 600;
                 text-transform: uppercase;
+                color: $dark-black;
 
                 span {
-                    color: #000;
+                    color: $pink-color;
                     font-style: italic;
                     text-transform: capitalize;
+                    letter-spacing: 3px;
                 }
             }
         }
 
-        &__link {
-            a {
-                font-size: rv(18px, 22px);
-                text-decoration: none;
+        &__description {
+            max-width: 45%;
 
-                span {}
+            p {
+                font-size: rv(18px, 22px);
+                color: $dark-black;
+                font-weight: 400;
+                line-height: 1.6;
+            }
+        }
+
+        &__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                font-size: rv(20px, 26px);
+                text-decoration: none;
+                color: $dark-black;
+
+                span {
+                    color: $light-blue;
+                    text-transform: capitalize;
+                }
+            }
+
+            &::before {
+                content: '';
+                background: url(images/icons/arrow-select.svg) no-repeat center/contain;
+                transform: rotate(-90deg);
+                margin-right: 20px;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
             }
         }
     }

@@ -32,12 +32,12 @@ $text = ( !empty($text) ) ? $text : '';
 ?>
 
 <!-- Text Image -->
-<section class="wrapper wrapper--grey">
+<section class="wrapper wrapper--white">
     <section class="text-papper">
         <div class="container">
             <div class="content">
                 <div class="content__text">
-                     <?php if (!empty($title)) {?>
+                    <?php if (!empty($title)) {?>
                         <h2 class="title">			
                             <?php echo wp_kses_post( $title );?>
                         </h2>
@@ -45,10 +45,10 @@ $text = ( !empty($text) ) ? $text : '';
                 </div> 
 
                 <div class="content__description">
-                     <?php if (!empty($text)) {?>
-                        <h2 class="text">			
+                    <?php if (!empty($text)) {?>
+                        <p class="text">			
                             <?php echo wp_kses_post( $text );?>
-                        </h2>
+                        </p>
 			        <?php } ?>
                 </div> 
 
@@ -59,6 +59,7 @@ $text = ( !empty($text) ) ? $text : '';
                 if ($white_papper) {
                     $pdf_url = esc_url($white_papper['url']);
                     $pdf_title = esc_html($white_papper['title']);
+                    $pdf_url = str_replace( ['[',']'], ['<span>','</span>'], empty($pdf_url) ? '' : $pdf_url);   //TODO: Ver Bruno
 
                     echo '<div class="content__link"><a href="' . $pdf_url . '" target="_blank">' . esc_html($text_pdf) . '</a></div>';
                 } ?>

@@ -31,7 +31,7 @@
 
         &__text {
             position: relative;
-            width: 60%;
+            max-width: 50%;
 
             @include responsive('desktop-s') {
                 max-width: 100%;
@@ -40,10 +40,15 @@
             .title {
                 color: $white;
                 font-family: $secondary-font;
-                font-size: rv(60px, 140px);
-                line-height: 1.25;
-                font-weight: 600;
+                font-size: rv(60px, 160px);
+                line-height: 1;
+                font-weight: 400;
                 text-transform: uppercase;
+                letter-spacing: 10px;
+
+                @if editor() {
+                    font-size: 100px;
+                }
             }
 
 

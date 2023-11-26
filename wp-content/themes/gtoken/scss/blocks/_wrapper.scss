@@ -1,5 +1,5 @@
 .wrapper {
-    &.is-style-grey-background {
+    /*   &.is-style-grey-background {
         background-color: $light-grey;
     }
 
@@ -9,14 +9,15 @@
 
     &.is-style-normal {
         background-color: $white;
-    }
+    } */
 
-    &--hero {
-        background-color: $hero-grey;
-    }
 
     &--white {
         background-color: $white;
+    }
+
+    &--pink {
+        background-color: $pink-color;
     }
 
     &--grey {

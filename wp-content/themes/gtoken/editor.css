@@ -46,6 +46,10 @@ Blocks Styles
 				Theme Name: Palermo
 				Text Domain: palermo
 				*/
+				/* 
+				font-family: 'Bebas Neue', sans-serif;
+				font-family: 'Bitter', serif;
+				font-family: 'Courier Prime', monospace; */
 				/*
 				tr( duracion, propiedades, delay)
 				*/
@@ -69,11 +73,33 @@ Blocks Styles
 				Se usa igual que fade, pero crea un loop para animar los elementos de forma ordenada
 				*/
 				/* Text Block Custom Style */
-				@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Ysabeau+Office:wght@400;500;600;700&display=swap"); /*!
- * Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license (Commercial License)
- * Copyright 2022 Fonticons, Inc.
- */
+				@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:ital@0;1&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap");
+				/* @font-face {
+				    font-family: 'Playfair Display';
+				    src: url('fonts/PlayfairDisplay-Black.eot');
+				    src: url('fonts/PlayfairDisplay-Black.eot?#iefix') format('embedded-opentype'),
+				        url('fonts/PlayfairDisplay-Black.woff2') format('woff2'),
+				        url('fonts/PlayfairDisplay-Black.woff') format('woff');
+				    font-weight: 900;
+				    font-style: normal;
+				    font-display: swap;
+				}
+
+				@font-face {
+				    font-family: 'Playfair Display';
+				    src: url('fonts/PlayfairDisplay-BlackItalic.eot');
+				    src: url('fonts/PlayfairDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
+				        url('fonts/PlayfairDisplay-BlackItalic.woff2') format('woff2'),
+				        url('fonts/PlayfairDisplay-BlackItalic.woff') format('woff');
+				    font-weight: 900;
+				    font-style: italic;
+				    font-display: swap;
+				} */
+				/*!
+				 * Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com
+				 * License - https://fontawesome.com/license (Commercial License)
+				 * Copyright 2022 Fonticons, Inc.
+				 */
 				/**
 				 * Swiper 9.0.5
 				 * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -112,102 +138,6 @@ Blocks Styles
 				--p0: 0%;
 				--v0: 0;
 }
-@font-face {
-				font-family: "Playfair Display";
-				src: url("fonts/PlayfairDisplay-Black.eot");
-				src: url("fonts/PlayfairDisplay-Black.eot?#iefix") format("embedded-opentype"), url("fonts/PlayfairDisplay-Black.woff2") format("woff2"), url("fonts/PlayfairDisplay-Black.woff") format("woff");
-				font-weight: 900;
-				font-style: normal;
-				font-display: swap;
-}
-@font-face {
-				font-family: "Playfair Display";
-				src: url("fonts/PlayfairDisplay-BlackItalic.eot");
-				src: url("fonts/PlayfairDisplay-BlackItalic.eot?#iefix") format("embedded-opentype"), url("fonts/PlayfairDisplay-BlackItalic.woff2") format("woff2"), url("fonts/PlayfairDisplay-BlackItalic.woff") format("woff");
-				font-weight: 900;
-				font-style: italic;
-				font-display: swap;
-}
-@font-face {
-				font-family: "Playfair Display";
-				src: url("fonts/PlayfairDisplay-Bold.eot");
-				src: url("fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("fonts/PlayfairDisplay-Bold.woff") format("woff");
-				font-weight: bold;
-				font-style: normal;
-				font-display: swap;
-}
-@font-face {
-				font-family: "Playfair Display";
-				src: url("fonts/PlayfairDisplay-BoldItalic.eot");
-				src: url("fonts/PlayfairDisplay-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("fonts/PlayfairDisplay-BoldItalic.woff") format("woff");
-				font-weight: bold;
-				font-style: italic;
-				font-display: swap;
-}
-@font-face {
-				font-family: "Playfair Display";
-				src: url("fonts/PlayfairDisplay-ExtraBoldItalic.eot");
-				src: url("fonts/PlayfairDisplay-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/PlayfairDisplay-ExtraBoldItalic.woff2") format("woff2"), url("fonts/PlayfairDisplay-ExtraBoldItalic.woff") format("woff");
-				font-weight: bold;
-				font-style: italic;
-				font-display: swap;
-}
-@font-face {
-				font-family: "Playfair Display";
-				src: url("fonts/PlayfairDisplay-ExtraBold.eot");
-				src: url("fonts/PlayfairDisplay-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/PlayfairDisplay-ExtraBold.woff2") format("woff2"), url("fonts/PlayfairDisplay-ExtraBold.woff") format("woff");
-				font-weight: bold;
-				font-style: normal;
-				font-display: swap;
-}
-@font-face {
-				font-family: "Playfair Display";
-				src: url("fonts/PlayfairDisplay-Italic.eot");
-				src: url("fonts/PlayfairDisplay-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/PlayfairDisplay-Italic.woff2") format("woff2"), url("fonts/PlayfairDisplay-Italic.woff") format("woff");
-				font-weight: normal;
-				font-style: italic;
-				font-display: swap;
-}
-@font-face {
-				font-family: "Playfair Display";
-				src: url("fonts/PlayfairDisplay-Medium.eot");
-				src: url("fonts/PlayfairDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/PlayfairDisplay-Medium.woff2") format("woff2"), url("fonts/PlayfairDisplay-Medium.woff") format("woff");
-				font-weight: 500;
-				font-style: normal;
-				font-display: swap;
-}
-@font-face {
-				font-family: "Playfair Display";
-				src: url("fonts/PlayfairDisplay-MediumItalic.eot");
-				src: url("fonts/PlayfairDisplay-MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/PlayfairDisplay-MediumItalic.woff2") format("woff2"), url("fonts/PlayfairDisplay-MediumItalic.woff") format("woff");
-				font-weight: 500;
-				font-style: italic;
-				font-display: swap;
-}
-@font-face {
-				font-family: "Playfair Display";
-				src: url("fonts/PlayfairDisplay-Regular.eot");
-				src: url("fonts/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("fonts/PlayfairDisplay-Regular.woff") format("woff");
-				font-weight: normal;
-				font-style: normal;
-				font-display: swap;
-}
-@font-face {
-				font-family: "Playfair Display";
-				src: url("fonts/PlayfairDisplay-SemiBold.eot");
-				src: url("fonts/PlayfairDisplay-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/PlayfairDisplay-SemiBold.woff2") format("woff2"), url("fonts/PlayfairDisplay-SemiBold.woff") format("woff");
-				font-weight: 600;
-				font-style: normal;
-				font-display: swap;
-}
-@font-face {
-				font-family: "Playfair Display";
-				src: url("fonts/PlayfairDisplay-SemiBoldItalic.eot");
-				src: url("fonts/PlayfairDisplay-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/PlayfairDisplay-SemiBoldItalic.woff2") format("woff2"), url("fonts/PlayfairDisplay-SemiBoldItalic.woff") format("woff");
-				font-weight: 600;
-				font-style: italic;
-				font-display: swap;
-}
 .editor-styles-wrapper .acf-block-preview html {
 				-webkit-box-sizing: border-box;
 				        box-sizing: border-box;
@@ -229,7 +159,7 @@ Blocks Styles
 				        box-sizing: border-box;
 }
 .editor-styles-wrapper .acf-block-preview body {
-				font-family: "Ysabeau Office", sans-serif;
+				font-family: "Bitter", serif;
 				font-size: clamp(16px, 13.6px + 0.004 * 100vw, 18px);
 				color: #34375A;
 				background: #ffffff;
@@ -264,7 +194,7 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview input[type=submit],
 .editor-styles-wrapper .acf-block-preview textarea,
 .editor-styles-wrapper .acf-block-preview button {
-				font-family: "Ysabeau Office", sans-serif;
+				font-family: "Bitter", serif;
 				-webkit-appearance: none;
 				   -moz-appearance: none;
 				        appearance: none;
@@ -274,13 +204,13 @@ Blocks Styles
 				background-color: transparent;
 }
 .editor-styles-wrapper .acf-block-preview select {
-				font-family: "Ysabeau Office", sans-serif;
+				font-family: "Bitter", serif;
 }
 .editor-styles-wrapper .acf-block-preview h1,
 .editor-styles-wrapper .acf-block-preview .h1,
 .editor-styles-wrapper .acf-block-preview .h1 p {
 				font-size: 124px;
-				font-family: "Ysabeau Office", sans-serif;
+				font-family: "Bitter", serif;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview h1,
@@ -300,7 +230,7 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .h2,
 .editor-styles-wrapper .acf-block-preview .h2 p {
 				font-size: 80px;
-				font-family: "Ysabeau Office", sans-serif;
+				font-family: "Bitter", serif;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview h2,
@@ -320,7 +250,7 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .h3,
 .editor-styles-wrapper .acf-block-preview .h3 p {
 				font-size: 36px;
-				font-family: "Ysabeau Office", sans-serif;
+				font-family: "Bitter", serif;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview h3,
@@ -340,7 +270,7 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .h4,
 .editor-styles-wrapper .acf-block-preview .h4 p {
 				font-size: 26px;
-				font-family: "Ysabeau Office", sans-serif;
+				font-family: "Bitter", serif;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview h4,
@@ -360,7 +290,7 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .h5,
 .editor-styles-wrapper .acf-block-preview .h5 p {
 				font-size: 18px;
-				font-family: "Ysabeau Office", sans-serif;
+				font-family: "Bitter", serif;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview h5,
@@ -380,7 +310,7 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .h6,
 .editor-styles-wrapper .acf-block-preview .h6 p {
 				font-size: 16px;
-				font-family: "Ysabeau Office", sans-serif;
+				font-family: "Bitter", serif;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview h6,
@@ -547,7 +477,6 @@ Blocks Styles
 .home .editor-styles-wrapper .acf-block-preview .header .site-menu__first-level {
 				color: #ffffff;
 				cursor: pointer;
-				font-family: "Playfair Display", sans-serif;
 }
 @media only screen and (min-width: 1050px) {
 				.home .editor-styles-wrapper .acf-block-preview .header .site-menu .site-menu__item.hover .site-menu__first-level {
@@ -1094,7 +1023,7 @@ Blocks Styles
 				border: 1px solid #235FEE;
 				padding: 0 25px;
 				font-size: 16px;
-				font-family: "Ysabeau Office", sans-serif;
+				font-family: "Bitter", serif;
 				color: #34375A;
 				font-size: 19px;
 }
@@ -1239,7 +1168,6 @@ Blocks Styles
 				border-radius: 36.55px;
 				background-color: transparent;
 				border: 1px solid #485783;
-				font-family: "Lato", sans-serif;
 }
 @media only screen and (max-width: 768px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_footer .button,
@@ -1476,7 +1404,7 @@ Blocks Styles
 				border: 1px solid #235FEE;
 				padding: 0 25px;
 				font-size: 16px;
-				font-family: "Ysabeau Office", sans-serif;
+				font-family: "Bitter", serif;
 				color: #34375A;
 				width: 100%;
 				margin-bottom: 8px;
@@ -1700,7 +1628,7 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .hero--home .hero__text {
 				position: relative;
-				width: 60%;
+				max-width: 50%;
 }
 @media only screen and (max-width: 1150px) {
 				.editor-styles-wrapper .acf-block-preview .hero--home .hero__text {
@@ -1709,11 +1637,13 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .hero--home .hero__text .title {
 				color: #ffffff;
-				font-family: "Playfair Display", sans-serif;
-				font-size: clamp(60px, -27px + 0.145 * 100vw, 140px);
-				line-height: 1.25;
-				font-weight: 600;
+				font-family: "Bebas Neue", sans-serif;
+				font-size: clamp(60px, -49.2px + 0.182 * 100vw, 160px);
+				line-height: 1;
+				font-weight: 400;
 				text-transform: uppercase;
+				letter-spacing: 10px;
+				font-size: 100px;
 }
 .editor-styles-wrapper .acf-block-preview .hero--home .hero__text p {
 				font-size: clamp(20px, 0.2px + 0.033 * 100vw, 38px);
@@ -2511,20 +2441,24 @@ Blocks Styles
 								        transform: rotate(360deg);
 				}
 }
-.editor-styles-wrapper .acf-block-preview .wrapper.is-style-grey-background {
-				background-color: #F9F9F9;
-}
-.editor-styles-wrapper .acf-block-preview .wrapper.is-style-light-blue-background {
-				background-color: #EFF7FA;
-}
-.editor-styles-wrapper .acf-block-preview .wrapper.is-style-normal {
-				background-color: #ffffff;
-}
-.editor-styles-wrapper .acf-block-preview .wrapper--hero {
-				background-color: #F7F8FA;
+.editor-styles-wrapper .acf-block-preview .wrapper {
+				/*   &.is-style-grey-background {
+				    background-color: $light-grey;
+				}
+
+				&.is-style-light-blue-background {
+				    background-color: $light-blue;
+				}
+
+				&.is-style-normal {
+				    background-color: $white;
+				} */
 }
 .editor-styles-wrapper .acf-block-preview .wrapper--white {
 				background-color: #ffffff;
+}
+.editor-styles-wrapper .acf-block-preview .wrapper--pink {
+				background-color: #FB3BA5;
 }
 .editor-styles-wrapper .acf-block-preview .wrapper--grey {
 				background-color: #F9F9F9;
@@ -2552,7 +2486,7 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .default_block h3,
 .editor-styles-wrapper .acf-block-preview .default_block h4,
 .editor-styles-wrapper .acf-block-preview .default_block h5 {
-				font-family: "Ysabeau Office", sans-serif;
+				font-family: "Bitter", serif;
 				font-weight: 600;
 				color: #34375A;
 				text-transform: none;
@@ -2692,7 +2626,7 @@ Blocks Styles
 				-webkit-box-direction: normal;
 				    -ms-flex-direction: column;
 				        flex-direction: column;
-				gap: 20px;
+				gap: 40px;
 				-webkit-box-pack: center;
 				    -ms-flex-pack: center;
 				        justify-content: center;
@@ -2717,15 +2651,56 @@ Blocks Styles
 				line-height: 1.2;
 				font-weight: 600;
 				text-transform: uppercase;
+				color: #231F20;
 }
 .editor-styles-wrapper .acf-block-preview .text-papper .content__text .title span {
-				color: #000;
+				color: #FB3BA5;
 				font-style: italic;
 				text-transform: capitalize;
+				letter-spacing: 3px;
+}
+.editor-styles-wrapper .acf-block-preview .text-papper .content__description {
+				max-width: 45%;
+}
+.editor-styles-wrapper .acf-block-preview .text-papper .content__description p {
+				font-size: clamp(18px, 13.8px + 0.007 * 100vw, 22px);
+				color: #231F20;
+				font-weight: 400;
+				line-height: 1.6;
+}
+.editor-styles-wrapper .acf-block-preview .text-papper .content__link {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 }
 .editor-styles-wrapper .acf-block-preview .text-papper .content__link a {
-				font-size: clamp(18px, 13.8px + 0.007 * 100vw, 22px);
+				font-size: clamp(20px, 13.4px + 0.011 * 100vw, 26px);
 				text-decoration: none;
+				color: #231F20;
+}
+.editor-styles-wrapper .acf-block-preview .text-papper .content__link a span {
+				color: #EFF7FA;
+				text-transform: capitalize;
+}
+.editor-styles-wrapper .acf-block-preview .text-papper .content__link::before {
+				content: "";
+				background: url(images/icons/arrow-select.svg) no-repeat center/contain;
+				-webkit-transform: rotate(-90deg);
+				        transform: rotate(-90deg);
+				margin-right: 20px;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+}
+.editor-styles-wrapper .acf-block-preview .number_grid {
+				padding-top: clamp(60px, 16.2px + 0.073 * 100vw, 100px);
+				padding-bottom: clamp(60px, 16.2px + 0.073 * 100vw, 100px);
 }
 .editor-styles-wrapper .wp-block {
 				overflow: hidden;
@@ -2740,13 +2715,12 @@ Blocks Styles
 				max-width: 100%;
 }
 
-.editor-styles-wrapper .acf-block-preview .author,
 .editor-styles-wrapper .acf-block-preview p,
 .editor-styles-wrapper .acf-block-preview span,
 .editor-styles-wrapper .acf-block-preview ul,
 .editor-styles-wrapper .acf-block-preview ol,
 .editor-styles-wrapper .acf-block-preview a {
-				font-family: "Ysabeau Office", sans-serif;
+				font-family: "Bitter", serif;
 }
 .editor-styles-wrapper .acf-block-preview .hero--home .title,
 .editor-styles-wrapper .acf-block-preview .hero--overview .title {

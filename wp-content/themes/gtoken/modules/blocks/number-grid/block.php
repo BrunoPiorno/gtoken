@@ -21,35 +21,36 @@
 
  do_action( 'palermo_pre_render_block', $block );
 ?>
-<section class="number_grid">
-    <div class="container">
-        <div class="number_grid__cont">
-            <?php $counter = 1;
+<section class="wrapper wrapper--pink">
+    <section class="number_grid">
+        <div class="container">
+            <div class="number_grid__cont">
+                <?php $counter = 1;
 
-            if ($repeater_data = get_field('repeater_data')):
-                foreach ($repeater_data as $item) : ?>
-                    <div class="number_grid__item">
-                        <div class="number_cont">
-                            <span class="number"><?php echo esc_html($counter); ?></span>
-                            <span class="number_text"><?php echo esc_html($item['title']); ?></span>
+                if ($repeater_data = get_field('repeater_data')):
+                    foreach ($repeater_data as $item) : ?>
+                        <div class="number_grid__item">
+                            <div class="number_cont">
+                                <span class="number"><?php echo esc_html($counter); ?></span>
+                                <span class="number_text"><?php echo esc_html($item['title']); ?></span>
+                            </div>
+                            <div class="number_content"><?php echo esc_html($item['content']); ?></div>
                         </div>
-                        <div class="number_content"><?php echo esc_html($item['content']); ?></div>
-                    </div>
-                    <?php $counter++; 
-                endforeach;
-            endif; ?>
+                        <?php $counter++; 
+                    endforeach;
+                endif; ?>
+            </div>
+
+
+            <?php if ($video_youtube = get_field('video_youtube')) {
+            $url = esc_url($video_youtube['url']);
+            $target = esc_attr($video_youtube['target']);
+            $title = esc_html($video_youtube['title']);
+            
+            echo '<div class="number_grid__link">Mira nuestro <a href="' . $url . '" target="' . $target . '">' . $title . '</a></div>';
+        } ?>
+
         </div>
-
-
-        <?php if ($video_youtube = get_field('video_youtube')) {
-        $url = esc_url($video_youtube['url']);
-        $target = esc_attr($video_youtube['target']);
-        $title = esc_html($video_youtube['title']);
-        
-        echo '<div class="number_grid__link">Mira nuestro <a href="' . $url . '" target="' . $target . '">' . $title . '</a></div>';
-    } ?>
-
-
-    </div>
+    </section>
 </section>
 
