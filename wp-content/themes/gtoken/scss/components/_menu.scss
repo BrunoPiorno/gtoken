@@ -29,6 +29,12 @@
 			}
 		}
 
+		.lang-item {
+			&::marker {
+				display: none;
+			}
+		}
+
 		&__first-level {
 			color: $white;
 			font-size: 20px;

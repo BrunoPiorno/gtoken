@@ -2,4 +2,9 @@
     padding-top: rv(60px, 100px);
     padding-bottom: rv(60px, 100px);
 
+    &__cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

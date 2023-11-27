@@ -440,6 +440,9 @@ Blocks Styles
 								        transform: translateX(0);
 				}
 }
+.editor-styles-wrapper .acf-block-preview .header .site-menu .lang-item::marker {
+				display: none;
+}
 .editor-styles-wrapper .acf-block-preview .header .site-menu__first-level {
 				color: #ffffff;
 				font-size: 20px;
@@ -1624,11 +1627,13 @@ Blocks Styles
 				width: 100%;
 				height: 100%;
 				content: "";
-				background-color: rgba(219, 133, 133, 0.2);
+				background-color: rgba(0, 0, 0, 0.3);
+				z-index: 1;
 }
 .editor-styles-wrapper .acf-block-preview .hero--home .hero__text {
 				position: relative;
 				max-width: 50%;
+				z-index: 2;
 }
 @media only screen and (max-width: 1150px) {
 				.editor-styles-wrapper .acf-block-preview .hero--home .hero__text {
@@ -2698,9 +2703,26 @@ Blocks Styles
 				width: 20px;
 				height: 20px;
 }
+.editor-styles-wrapper .acf-block-preview .accordion--faqs .accordion__question {
+				color: #FB3BA5;
+}
+.editor-styles-wrapper .acf-block-preview .accordion--faqs .accordion__answer {
+				display: none;
+}
 .editor-styles-wrapper .acf-block-preview .number_grid {
 				padding-top: clamp(60px, 16.2px + 0.073 * 100vw, 100px);
 				padding-bottom: clamp(60px, 16.2px + 0.073 * 100vw, 100px);
+}
+.editor-styles-wrapper .acf-block-preview .number_grid__cont {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
 }
 .editor-styles-wrapper .wp-block {
 				overflow: hidden;

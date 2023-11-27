@@ -24,14 +24,15 @@
             &:before {
                 @include absolute();
                 content: "";
-                background-color: rgba(219, 133, 133, 0.20);
-                //z-index: 1;
+                background-color: rgba(0, 0, 0, 0.3);
+                z-index: 1;
             }
         }
 
         &__text {
             position: relative;
             max-width: 50%;
+            z-index: 2;
 
             @include responsive('desktop-s') {
                 max-width: 100%;
