@@ -305,9 +305,9 @@ strong * {
 }
 
 .container {
-				max-width: 1980px;
+				max-width: 2100px;
 				margin: 0 auto;
-				padding: 0 30px;
+				padding: 0 90px;
 				width: 100%;
 }
 
@@ -1673,8 +1673,8 @@ select option {
 .header .site-logo {
 				position: absolute;
 				top: 15px;
-				left: 30px;
-				width: 176px;
+				left: 90px;
+				width: 95px;
 				-webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 				transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 				-webkit-transition-delay: 0s;
@@ -1739,7 +1739,6 @@ select option {
 				opacity: 1;
 }
 .scrolled .header .site-logo {
-				width: 176px;
 				top: 15px;
 }
 @media only screen and (max-width: 1050px) {
@@ -1748,8 +1747,8 @@ select option {
 								width: 150px;
 				}
 }
-.scrolled .header .site-logo #logo_text path {
-				fill: #34375A;
+.scrolled .header .site-logo svg g path {
+				fill: #000;
 }
 .menuopen .header .container:before {
 				width: calc(100vw - 20px);
@@ -1849,7 +1848,7 @@ select option {
 				}
 }
 .site-footer__logo-column {
-				width: 43%;
+				width: 20%;
 }
 .site-footer__logo-column .site-logo {
 				width: 266px;

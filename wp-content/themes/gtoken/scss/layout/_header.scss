@@ -26,8 +26,8 @@
 	.site-logo {
 		position: absolute;
 		top: 15px;
-		left: 30px;
-		width: 176px;
+		left: 90px;
+		width: 95px;
 		@include tre(.5s);
 
 		svg {
@@ -96,7 +96,7 @@
 		}
 
 		.site-logo {
-			width: 176px;
+			//width: 176px;
 			top: 15px;
 
 			@include responsive('tablet-h') {
@@ -104,9 +104,11 @@
 				width: 150px;
 			}
 
-			#logo_text {
-				path {
-					fill: $primary-color;
+			svg {
+				g {
+					path {
+						fill: $black;
+					}
 				}
 			}
 		}
