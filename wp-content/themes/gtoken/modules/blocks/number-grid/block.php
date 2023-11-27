@@ -22,7 +22,7 @@
  do_action( 'palermo_pre_render_block', $block );
 ?>
 <section class="wrapper wrapper--pink" data-waypoint=".5">
-    <section class="number_grid">
+    <section class="number_grid" id="como-funciona">
         <div class="container">
             <div class="number_grid__cont">
                 <?php $counter = 1;

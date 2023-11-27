@@ -33,7 +33,7 @@ $text = ( !empty($text) ) ? $text : '';
 
 <!-- Text Image -->
 <section class="wrapper wrapper--white">
-    <section class="text-papper">
+    <section class="text-papper" id="proposito">
         <div class="container">
             <div class="content">
                 <div class="content__text">

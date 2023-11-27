@@ -22,7 +22,7 @@
  do_action( 'palermo_pre_render_block', $block );
 ?>
 
-<section class="accordion accordion--faqs">
+<section class="accordion accordion--faqs" id="faqs">
     <div class="container">
         <div class="accordion__cont">
             <?php while (have_rows('faqs')): the_row();

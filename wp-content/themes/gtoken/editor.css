@@ -440,8 +440,9 @@ Blocks Styles
 								        transform: translateX(0);
 				}
 }
-.editor-styles-wrapper .acf-block-preview .header .site-menu .lang-item::marker {
+.editor-styles-wrapper .acf-block-preview .header .site-menu li.lang-item::marker {
 				display: none;
+				opacity: 0;
 }
 .editor-styles-wrapper .acf-block-preview .header .site-menu__first-level {
 				color: #ffffff;
@@ -1904,12 +1905,18 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .email,
 .editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .content__link {
 				margin-right: 30px;
+				font-size: 20px;
 }
 .editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .copyright a,
 .editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .direccion a,
 .editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .email a,
 .editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .content__link a {
 				color: #ffffff;
+				text-decoration: none;
+}
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .content__link a {
+				font-weight: 700;
+				text-transform: uppercase;
 }
 .editor-styles-wrapper .acf-block-preview .site-footer__logo-column__three {
 				display: -webkit-box;
@@ -2738,9 +2745,7 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .text-papper .content__link::before {
 				content: "";
-				background: url(images/icons/arrow-select.svg) no-repeat center/contain;
-				-webkit-transform: rotate(-90deg);
-				        transform: rotate(-90deg);
+				background: url(images/icons/arrow-select-pink.png) no-repeat center/contain;
 				margin-right: 20px;
 				display: inline-block;
 				width: 20px;
@@ -2748,6 +2753,7 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .accordion--faqs .accordion__question {
 				color: #FB3BA5;
+				font-size: 30px;
 }
 .editor-styles-wrapper .acf-block-preview .accordion--faqs .accordion__answer {
 				display: none;
@@ -2837,9 +2843,7 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .number_grid__link::before {
 				content: "";
-				background: url(images/icons/arrow-select.svg) no-repeat center/contain;
-				-webkit-transform: rotate(-90deg);
-				        transform: rotate(-90deg);
+				background: url(images/icons/arrow-select.png) no-repeat center/contain;
 				margin-right: 20px;
 				display: inline-block;
 				width: 20px;

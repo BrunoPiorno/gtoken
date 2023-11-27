@@ -29,9 +29,10 @@
 			}
 		}
 
-		.lang-item {
+		li.lang-item {
 			&::marker {
 				display: none;
+				opacity: 0;
 			}
 		}
 
