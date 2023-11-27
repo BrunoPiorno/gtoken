@@ -10,7 +10,7 @@
 				</div>
 
 			
-				<div class="site-footer__logo-column">
+				<div class="site-footer__logo-column__two">
 					<?php get_template_part('modules/components/copyright',null, ['footer' => true] ); ?>
 					<?php echo ($direccion = get_field('direccion','option'))? '<div class="direccion">'.$direccion.'</div>':''; ?>
 					<?php if ($email = get_field('email', 'option')) {
@@ -22,9 +22,11 @@
 						$pdf_title = esc_html($white_papper['title']);
 
 						echo '<div class="content__link"><a href="' . $pdf_url . '" target="_blank">' . esc_html($pdf_title) . '</a></div>';
-					} 
-					get_template_part('modules/components/socials',null, ['footer' => true] ); ?>
+					} ?>
 				</div>
+				<div class="site-footer__logo-column__three">
+					<?php get_template_part('modules/components/socials',null, ['footer' => true] ); ?>
+				</dov>
 
 			</div>
 			

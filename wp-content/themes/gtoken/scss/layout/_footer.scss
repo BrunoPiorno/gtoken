@@ -1,5 +1,5 @@
 .site-footer {
-	background: $hero-grey;
+	background: #221f20d9;
 	color: $white;
 
 	.container {
@@ -31,7 +31,6 @@
 		}
 
 		@include responsive('tablet-h') {
-			width: 100%;
 
 			.site-logo {
 				width: 230px;
@@ -45,6 +44,46 @@
 				margin: 0 auto;
 			}
 		}
+
+		&__two {
+			justify-content: center;
+			width: 100%;
+			display: flex;
+			align-items: center;
+
+			.copyright,
+			.direccion,
+			.email,
+			.content__link {
+				margin-right: 30px;
+
+				a {
+					color: $white;
+				}
+
+			}
+
+
+		}
+
+		&__three {
+			display: flex;
+
+			.socials {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				a {
+					margin-left: 20px;
+
+					svg path {
+						fill: $white;
+					}
+				}
+			}
+		}
+
 	}
 
 	&-top {

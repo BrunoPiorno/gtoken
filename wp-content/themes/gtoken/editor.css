@@ -1845,7 +1845,7 @@ Blocks Styles
 				}
 }
 .editor-styles-wrapper .acf-block-preview .site-footer {
-				background: #F7F8FA;
+				background: rgba(34, 31, 32, 0.8509803922);
 				color: #ffffff;
 }
 .editor-styles-wrapper .acf-block-preview .site-footer .container {
@@ -1877,9 +1877,6 @@ Blocks Styles
 				max-width: 100%;
 }
 @media only screen and (max-width: 1050px) {
-				.editor-styles-wrapper .acf-block-preview .site-footer__logo-column {
-								width: 100%;
-				}
 				.editor-styles-wrapper .acf-block-preview .site-footer__logo-column .site-logo {
 								width: 230px;
 				}
@@ -1889,6 +1886,52 @@ Blocks Styles
 								width: 160px;
 								margin: 0 auto;
 				}
+}
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two {
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				width: 100%;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+}
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .copyright,
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .direccion,
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .email,
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .content__link {
+				margin-right: 30px;
+}
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .copyright a,
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .direccion a,
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .email a,
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__two .content__link a {
+				color: #ffffff;
+}
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__three {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+}
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__three .socials {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+}
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__three .socials a {
+				margin-left: 20px;
+}
+.editor-styles-wrapper .acf-block-preview .site-footer__logo-column__three .socials a svg path {
+				fill: #ffffff;
 }
 .editor-styles-wrapper .acf-block-preview .site-footer-top {
 				display: -webkit-box;
