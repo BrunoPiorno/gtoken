@@ -20,16 +20,34 @@
  */
 
  do_action( 'palermo_pre_render_block', $block );
+ $title = get_field('title');
+ $text = get_field('text');
 ?>
 
 <section class="image-text">
     <div class="container">
         <div class="image-text__cont">
-            <div class="image-text__image"></div>
+            <?php if($image = get_field('image')): ?>
+                <div class="image-text__image">
+                    <div class="image-text__image__logo"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/cria.png" alt="Google Play"></div>
+                    <?php get_template_part('modules/components/image', null, ['image' => $image]); ?>
+                </div>
+            <?php endif; ?> 
             <div class="image-text__content">
-                <div class="image-text__title"></div>
-                <div class="image-text__text"></div>
-                <div class="image-text__buttons"></div>
+                <?php echo empty($title)? '':'<div class="image-text__title">'.esc_html($title).'</div>'; ?>
+                <?php echo empty($text)? '':'<div class="image-text__text">'.esc_html($text).'</div>'; ?>
+                <div class="image-text__buttons">
+                    <?php if ($link_google_play = get_field('link_google_play')) : ?>
+                        <a href="<?php echo esc_url($link_google_play); ?>" target="_blank" class="google-play-link">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/google-play.png" alt="Google Play">
+                        </a>
+                    <?php endif; 
+                    if ($link_app_store = get_field('link_app_store')) : ?>
+                        <a href="<?php echo esc_url($link_app_store); ?>" target="_blank" class="app-store-link">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/app-store.svg" alt="App Store">
+                        </a>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
     </div>

@@ -2757,6 +2757,46 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .accordion--faqs .accordion__answer {
 				display: none;
 }
+.editor-styles-wrapper .acf-block-preview .image-text {
+				position: relative;
+}
+.editor-styles-wrapper .acf-block-preview .image-text::after {
+				content: "";
+				background-color: #3ACBED;
+				position: absolute;
+				top: 10px;
+				z-index: -1;
+				width: 100%;
+				height: 456px;
+}
+.editor-styles-wrapper .acf-block-preview .image-text__cont {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+}
+.editor-styles-wrapper .acf-block-preview .image-text__image__logo {
+				position: absolute;
+				top: 0;
+}
+.editor-styles-wrapper .acf-block-preview .image-text__buttons {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				gap: 20px;
+}
+.editor-styles-wrapper .acf-block-preview .image-text__buttons a,
+.editor-styles-wrapper .acf-block-preview .image-text__buttons img {
+				width: 240px;
+				height: 78px;
+				-o-object-fit: cover;
+				   object-fit: cover;
+}
 .editor-styles-wrapper .acf-block-preview .number_grid {
 				padding-top: clamp(60px, 16.2px + 0.073 * 100vw, 100px);
 				padding-bottom: clamp(60px, 16.2px + 0.073 * 100vw, 100px);
