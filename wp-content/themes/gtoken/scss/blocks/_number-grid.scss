@@ -3,8 +3,73 @@
     padding-bottom: rv(60px, 100px);
 
     &__cont {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         align-items: center;
         justify-content: center;
+        gap: 40px;
+
+        .number {
+            font-size: rv(36px, 140px);
+            font-weight: 700;
+            color: $black;
+            font-family: $secondary-font;
+
+        }
+
+        .number_text {
+            font-size: rv(25px, 56px);
+            font-weight: 400;
+            color: $white;
+            font-family: $secondary-font;
+            line-height: 1;
+            max-width: 200px;
+        }
+    }
+
+    &__item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        @include fade(0, 100px, true, 0);
+
+        .number_cont {
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            gap: 10px;
+        }
+
+        .number_content {
+            color: $white;
+            font-size: rv(18px, 22px);
+            font-style: italic;
+        }
+    }
+
+    &__link {
+        padding-top: 40px;
+        font-size: rv(20px, 26px);
+        font-style: italic;
+        font-weight: 400;
+        color: $white;
+        @include fade(0, 100px, true, 1);
+
+        a {
+            color: $black;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        &::before {
+            content: '';
+            background: url(images/icons/arrow-select.svg) no-repeat center/contain;
+            transform: rotate(-90deg);
+            margin-right: 20px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
     }
 }
