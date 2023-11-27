@@ -1,11 +1,11 @@
 {
-    "key": "group_655cf61758e0d",
-    "title": "Block: Number Grid",
+    "key": "group_6564a6d3d5125",
+    "title": "Block: Slider Links",
     "fields": [
         {
-            "key": "field_655cf617e6bfc",
-            "label": "Grilla Item",
-            "name": "repeater_data",
+            "key": "field_6564a6d3dbfc5",
+            "label": "Repeater Field",
+            "name": "repeater_field",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -19,17 +19,17 @@
             "layout": "table",
             "pagination": 0,
             "min": 0,
-            "max": 4,
+            "max": 0,
             "collapsed": "",
             "button_label": "Add Row",
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_655cf661e6bfe",
-                    "label": "Title",
-                    "name": "title",
+                    "key": "field_6564a6d3dcb79",
+                    "label": "Link",
+                    "name": "link",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "link",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -38,17 +38,39 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_655cf617e6bfc"
+                    "return_format": "array",
+                    "parent_repeater": "field_6564a6d3dbfc5"
                 },
                 {
-                    "key": "field_655cf66ae6bff",
-                    "label": "Content",
-                    "name": "content",
+                    "key": "field_6564a75cae47f",
+                    "label": "Logo",
+                    "name": "logo",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_6564a6d3dbfc5"
+                },
+                {
+                    "key": "field_6564a70112f01",
+                    "label": "Texto",
+                    "name": "texto",
                     "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
@@ -61,28 +83,12 @@
                     },
                     "default_value": "",
                     "maxlength": "",
-                    "rows": 4,
+                    "rows": "",
                     "placeholder": "",
                     "new_lines": "",
-                    "parent_repeater": "field_655cf617e6bfc"
+                    "parent_repeater": "field_6564a6d3dbfc5"
                 }
             ]
-        },
-        {
-            "key": "field_655cf68de6c00",
-            "label": "Video Youtube",
-            "name": "video_youtube",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
         }
     ],
     "location": [
@@ -90,7 +96,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/number-grid"
+                "value": "acf\/slider-links"
             }
         ]
     ],
@@ -103,5 +109,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701097025
+    "modified": 1701095273
 }
