@@ -17,12 +17,24 @@
         align-items: center;
 
 
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: flex-start;
+        align-self: flex-start;
     }
 
     &__image {
+        position: relative;
+
         &__logo {
             position: absolute;
             top: 0;
+            left: 0;
         }
     }
 
@@ -37,5 +49,13 @@
             height: 78px;
             object-fit: cover;
         }
+    }
+
+    &__title {
+        font-size: rv(18px, 55px);
+        font-weight: 700;
+        font-family: $secondary-font;
+        color: $white;
+        margin-top: 20px;
     }
 }
