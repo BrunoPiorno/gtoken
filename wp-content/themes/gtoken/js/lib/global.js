@@ -115,7 +115,7 @@ jQuery(document).ready(function ($) {
 			jQuery('.site-menu__item.hover').removeClass('hover');
 		}
 	})
-	/* var swiper = new Swiper('.swiper-container', {
+	var swiper = new Swiper('.swiper-container', {
 		slidesPerView: 3,
 		spaceBetween: 30,
 		pagination: {
@@ -126,7 +126,7 @@ jQuery(document).ready(function ($) {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
-	}); */
+	});
 });
 
 if (document.querySelector('.slider-partners')) {
