@@ -4,7 +4,7 @@
 		top: 38px;
 		right: 24px;
 		display: flex;
-		gap: 42px;
+		gap: 20px;
 		transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 
 		@include responsive('tablet-h') {
@@ -29,11 +29,8 @@
 			}
 		}
 
-		li.lang-item {
-			&::marker {
-				display: none;
-				opacity: 0;
-			}
+		.lang-item {
+			list-style: none;
 		}
 
 		&__first-level {
