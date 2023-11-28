@@ -5,8 +5,8 @@
 	.container {
 		//display: flex;
 		//justify-content: space-between;
-		padding-top: rv(35px, 45px);
-		padding-bottom: rv(35px, 45px);
+		padding-top: rv(35px, 70px);
+		padding-bottom: rv(35px, 70px);
 
 		@include responsive('tablet-h') {
 			flex-wrap: wrap;
