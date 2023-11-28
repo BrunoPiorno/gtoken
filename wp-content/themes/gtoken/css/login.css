@@ -50,14 +50,14 @@ body.login #login input[type=password] {
 body.login #login input[type=text]:focus,
 body.login #login input[type=password]:focus {
 				border: none;
-				border-bottom: 1px solid #34375A;
+				border-bottom: 1px solid #3ACBED;
 				outline: none;
 }
 body.login #backtoblog {
 				display: none;
 }
 body.login #wp-submit {
-				background: #34375A;
+				background: #3ACBED;
 				border: none;
 				font-weight: bold;
 				text-transform: uppercase;
@@ -66,7 +66,7 @@ body.login #wp-submit {
 				transition: 0.3s;
 }
 body.login #wp-submit:hover {
-				background: #2b2d4a;
+				background: #23c5eb;
 }
 body.login #nav {
 				text-align: center;
@@ -75,7 +75,7 @@ body.login #nav a {
 				color: #fff;
 }
 body.login #nav a:hover {
-				color: #34375A;
+				color: #3ACBED;
 }
 body.login #login_error {
 				border: none;

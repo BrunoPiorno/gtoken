@@ -7,19 +7,20 @@
         grid-template-columns: repeat(4, 1fr);
         align-items: center;
         justify-content: center;
-        gap: 40px;
+        gap: 90px;
 
         .number {
-            font-size: rv(36px, 140px);
-            font-weight: 700;
-            color: $black;
+            font-size: rv(60px, 281px);
+            font-weight: 500;
+            line-height: 1;
+            color: $light-black;
             font-family: $secondary-font;
 
         }
 
         .number_text {
-            font-size: rv(25px, 56px);
-            font-weight: 400;
+            font-size: rv(25px, 80px);
+            font-weight: 500;
             color: $white;
             font-family: $secondary-font;
             line-height: 1;

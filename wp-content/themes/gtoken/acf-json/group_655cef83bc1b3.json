@@ -38,9 +38,9 @@
             },
             "default_value": "",
             "maxlength": "",
-            "rows": 4,
+            "rows": 5,
             "placeholder": "",
-            "new_lines": ""
+            "new_lines": "br"
         },
         {
             "key": "field_655d015cae8ef",
@@ -101,5 +101,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701029199
+    "modified": 1701209423
 }
