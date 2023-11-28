@@ -1,10 +1,19 @@
 .slider-links {
     position: relative;
+    padding-top: rv(60px, 100px);
+    padding-bottom: rv(60px, 200px);
 
+    .swiper-container {
+        @extend .container;
+    }
 
     .swiper-wrapper {
-        margin-top: 44px;
         text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 40px;
+        z-index: 1;
 
         .item {
             text-align: center;
@@ -24,6 +33,24 @@
 
     .swiper-slide {
         max-width: 400px;
+
+        img {
+            max-width: 320px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: rv(18px, 24px);
+            font-weight: 400;
+            line-height: 1.4;
+            color: $light-black;
+            font-style: italic;
+        }
+
+        a {
+            color: $light-black;
+            text-decoration: none;
+        }
     }
 
     .swiper.swiper-wrapper {

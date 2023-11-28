@@ -1,4 +1,7 @@
 .accordion--faqs {
+    padding-top: rv(60px, 100px);
+    padding-bottom: rv(60px, 100px);
+
     .accordion__question {
         color: $pink-color;
         font-size: 30px;
