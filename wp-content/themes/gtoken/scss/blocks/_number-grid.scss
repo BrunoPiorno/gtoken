@@ -15,6 +15,7 @@
             line-height: 1;
             color: $light-black;
             font-family: $secondary-font;
+            max-height: 240px;
 
         }
 
@@ -34,11 +35,12 @@
         flex-direction: column;
         gap: 40px;
         @include fade(0, 100px, true, 0);
+        min-height: 505px;
 
         .number_cont {
             display: flex;
             justify-content: flex-start;
-            align-items: baseline;
+            align-items: flex-end;
             gap: 10px;
         }
 
@@ -46,6 +48,7 @@
             color: $white;
             font-size: rv(18px, 22px);
             font-style: italic;
+
         }
     }
 

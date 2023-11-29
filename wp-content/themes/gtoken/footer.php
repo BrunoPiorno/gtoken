@@ -2,7 +2,7 @@
 
 		</main><!-- #content -->
 
-	<footer class="site-footer">
+	<footer class="site-footer wrapper wrapper--light-black">
 		<div class="container">
 			<div class="site-footer-top">
 				<div class="site-footer__logo-column">

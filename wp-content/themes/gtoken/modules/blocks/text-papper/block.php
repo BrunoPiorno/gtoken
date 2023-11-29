@@ -56,13 +56,27 @@ $text = ( !empty($text) ) ? $text : '';
                 $text_pdf = get_field('text_pdf');
                 $white_papper = get_field('white_papper');
 
+                echo '<div class="content__link">';
+
+                if ($text_pdf) {
+                    echo '<div class="content__link__text">' . esc_html($text_pdf) . '</div>';
+                }
+                
+                if ($text_pdf && $white_papper) {
+                    echo '&nbsp;';
+                }
+
                 if ($white_papper) {
                     $pdf_url = esc_url($white_papper['url']);
                     $pdf_title = esc_html($white_papper['title']);
-                    $pdf_url = str_replace( ['[',']'], ['<span>','</span>'], empty($pdf_url) ? '' : $pdf_url);   //TODO: Ver Bruno
+                    $pdf_url = str_replace(['[', ']'], ['<span>', '</span>'], empty($pdf_url) ? '' : $pdf_url);
 
-                    echo '<div class="content__link"><a href="' . $pdf_url . '" target="_blank">' . esc_html($text_pdf) . '</a></div>';
-                } ?>
+                    echo ' <a href="' . $pdf_url . '" target="_blank">' .  esc_html($pdf_title) . '</a>';
+                }
+
+                echo '</div>';
+                ?>
+
 
             </div>
         </div>

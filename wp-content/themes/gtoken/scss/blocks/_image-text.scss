@@ -5,7 +5,7 @@
         content: '';
         background-color: $light-blue-color;
         position: absolute;
-        top: 10px;
+        top: 190px;
         z-index: -1;
         width: 100%;
         height: 456px;
@@ -24,17 +24,30 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        justify-content: flex-start;
-        align-self: flex-start;
+        width: 856px;
+        max-width: 100%;
+        //justify-content: flex-start;
+        //align-self: flex-start;
     }
 
     &__image {
         position: relative;
 
+        img {
+            width: auto;
+            height: 750px;
+            object-fit: cover;
+        }
+
         &__logo {
             position: absolute;
             top: 0;
             left: 0;
+
+            img {
+                width: auto;
+                height: auto;
+            }
         }
     }
 
