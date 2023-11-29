@@ -125,14 +125,6 @@ jQuery(document).ready(function ($) {
 				nextEl: ".swiper-button-next",
 				prevEl: ".swiper-button-prev",
 			},
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-				type: "bullets",
-				disableOnInteraction: false,
-				dynamicBullets: false
-			},
-
 			slidesPerView: 1,
 			loopedSlides: 1,
 
@@ -153,6 +145,7 @@ jQuery(document).ready(function ($) {
 		}
 		new Swiper('.slider-partners', opciones);
 	}
+
 
 });
 
