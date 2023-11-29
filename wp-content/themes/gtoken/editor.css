@@ -80,33 +80,11 @@ Blocks Styles
 				Se usa igual que fade, pero crea un loop para animar los elementos de forma ordenada
 				*/
 				/* Text Block Custom Style */
-				@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap");
-				/* @font-face {
-				    font-family: 'Playfair Display';
-				    src: url('fonts/PlayfairDisplay-Black.eot');
-				    src: url('fonts/PlayfairDisplay-Black.eot?#iefix') format('embedded-opentype'),
-				        url('fonts/PlayfairDisplay-Black.woff2') format('woff2'),
-				        url('fonts/PlayfairDisplay-Black.woff') format('woff');
-				    font-weight: 900;
-				    font-style: normal;
-				    font-display: swap;
-				}
-
-				@font-face {
-				    font-family: 'Playfair Display';
-				    src: url('fonts/PlayfairDisplay-BlackItalic.eot');
-				    src: url('fonts/PlayfairDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
-				        url('fonts/PlayfairDisplay-BlackItalic.woff2') format('woff2'),
-				        url('fonts/PlayfairDisplay-BlackItalic.woff') format('woff');
-				    font-weight: 900;
-				    font-style: italic;
-				    font-display: swap;
-				} */
-				/*!
-				 * Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com
-				 * License - https://fontawesome.com/license (Commercial License)
-				 * Copyright 2022 Fonticons, Inc.
-				 */
+				@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap"); /*!
+ * Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ * Copyright 2022 Fonticons, Inc.
+ */
 				/**
 				 * Swiper 9.0.5
 				 * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -144,6 +122,10 @@ Blocks Styles
 				--v1: 1;
 				--p0: 0%;
 				--v0: 0;
+}
+@font-face {
+				font-family: "druk-condensed";
+				src: url("./fonts/DrukCond-Super.woff2") format("woff2"), url("./fonts/DrukCond-Super.ttf") format("truetype");
 }
 .editor-styles-wrapper .acf-block-preview html {
 				-webkit-box-sizing: border-box;
@@ -1649,7 +1631,7 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .hero--home .hero__text .title {
 				color: #ffffff;
-				font-family: "Bebas Neue", sans-serif;
+				font-family: "druk-condensed", "Futura", Arial, sans-serif;
 				font-size: clamp(60px, -181.2px + 0.402 * 100vw, 281px);
 				line-height: 1;
 				font-weight: 500;

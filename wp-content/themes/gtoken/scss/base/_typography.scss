@@ -1,23 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* @font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-Black.eot');
-    src: url('fonts/PlayfairDisplay-Black.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PlayfairDisplay-Black.woff2') format('woff2'),
-        url('fonts/PlayfairDisplay-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-BlackItalic.eot');
-    src: url('fonts/PlayfairDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PlayfairDisplay-BlackItalic.woff2') format('woff2'),
-        url('fonts/PlayfairDisplay-BlackItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-} */
+    font-family: 'druk-condensed';
+    src: url('./fonts/DrukCond-Super.woff2') format('woff2'),
+        url('./fonts/DrukCond-Super.ttf') format('truetype')
+}
