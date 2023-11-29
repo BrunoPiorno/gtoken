@@ -2797,6 +2797,7 @@ Blocks Styles
 				font-weight: 400;
 				line-height: 1;
 				font-style: italic;
+				padding: 30px 30px 30px 64px;
 				display: -webkit-box;
 				display: -ms-flexbox;
 				display: flex;
@@ -2815,7 +2816,6 @@ Blocks Styles
 				height: 29px;
 }
 .editor-styles-wrapper .acf-block-preview .accordion--faqs .accordion__item {
-				padding: 30px 30px 30px 64px;
 				border-bottom: 1px solid #FB3BA5;
 				width: 100%;
 				cursor: pointer;
@@ -2838,7 +2838,7 @@ Blocks Styles
 				font-weight: 400;
 				line-height: 1.4;
 				color: #ffffff;
-				padding-top: 20px;
+				padding: 0 30px 20px 64px;
 				font-style: italic;
 				display: none;
 }

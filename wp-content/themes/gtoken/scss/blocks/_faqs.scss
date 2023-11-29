@@ -8,7 +8,7 @@
         font-weight: 400;
         line-height: 1;
         font-style: italic;
-
+        padding: 30px 30px 30px 64px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -23,7 +23,6 @@
     }
 
     .accordion__item {
-        padding: 30px 30px 30px 64px;
         border-bottom: 1px solid $pink-color;
         width: 100%;
         cursor: pointer;
@@ -52,7 +51,7 @@
         font-weight: 400;
         line-height: 1.4;
         color: $white;
-        padding-top: 20px;
+        padding: 0 30px 20px 64px;
         font-style: italic;
         display: none;
     }
