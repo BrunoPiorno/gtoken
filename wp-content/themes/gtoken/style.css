@@ -57,8 +57,8 @@ Se usa igual que fade, pero crea un loop para animar los elementos de forma orde
 */
 /* Text Block Custom Style */
 @font-face {
-				font-family: "druk-condensed";
-				src: url("./fonts/DrukCond-Super.woff2") format("woff2"), url("./fonts/DrukCond-Super.ttf") format("truetype");
+				font-family: "Druk-Medium";
+				src: url("./fonts/Druk-Medium.woff2") format("woff2"), url("./fonts/Druk-Medium.woff") format("truetype");
 }
 html {
 				-webkit-box-sizing: border-box;
@@ -1603,7 +1603,7 @@ select option {
 }
 .hero--home .hero__text .title {
 				color: #ffffff;
-				font-family: "druk-condensed", "Futura", Arial, sans-serif;
+				font-family: "Druk-Medium";
 				font-size: clamp(60px, -181.2px + 0.402 * 100vw, 281px);
 				line-height: 1;
 				font-weight: 500;
@@ -1612,6 +1612,7 @@ select option {
 				        transform: var(--fade-transform, translateX(-100px) translateY(0));
 				-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 				transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				letter-spacing: 20px;
 }
 .hero--home .hero__text p {
 				font-size: clamp(20px, 0.2px + 0.033 * 100vw, 38px);
@@ -2998,16 +2999,17 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				font-weight: 500;
 				line-height: 1;
 				color: #231F20;
-				font-family: "druk-condensed", "Futura", Arial, sans-serif;
+				font-family: "Druk-Medium";
 				max-height: 240px;
 }
 .number_grid__cont .number_text {
 				font-size: clamp(25px, -35px + 0.1 * 100vw, 80px);
 				font-weight: 500;
 				color: #ffffff;
-				font-family: "druk-condensed", "Futura", Arial, sans-serif;
+				font-family: "Druk-Medium";
 				line-height: 1;
 				max-width: 200px;
+				text-transform: uppercase;
 }
 .number_grid__item {
 				width: 100%;

@@ -14,7 +14,7 @@
             font-weight: 500;
             line-height: 1;
             color: $light-black;
-            font-family: $druk-condensed;
+            font-family: $druk;
             max-height: 240px;
 
         }
@@ -23,9 +23,10 @@
             font-size: rv(25px, 80px);
             font-weight: 500;
             color: $white;
-            font-family: $druk-condensed;
+            font-family: $druk;
             line-height: 1;
             max-width: 200px;
+            text-transform: uppercase;
         }
     }
 
