@@ -24,7 +24,7 @@
 <?php if( have_rows('repeater_field') ): ?>
     <section class="slider-links">
         <div class="swiper-container">
-            <div class="swiper-wrapper">
+            <div class="swiper swiper-wrapper">
                 <?php while( have_rows('repeater_field') ): the_row(); 
                     $logo = get_sub_field('logo');
                     $link = get_sub_field('link');
@@ -41,6 +41,12 @@
                     </div>
                 <?php endwhile; ?>
             </div>
+  <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
         </div>
     </section>
 <?php endif; ?>

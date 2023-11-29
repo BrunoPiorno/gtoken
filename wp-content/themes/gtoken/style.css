@@ -3051,7 +3051,6 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				padding: 0 15px;
 }
 .slider-links .swiper-slide img {
-				max-width: 320px;
 				margin-bottom: 20px;
 }
 .slider-links .swiper-slide p {
@@ -3065,25 +3064,33 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				color: #231F20;
 				text-decoration: none;
 }
-.slider-links .swiper.swiper-wrapper .swiper-button-prev,
-.slider-links .swiper.swiper-wrapper .swiper-button-next {
-				background: url(images/icons/arrow-slider.svg) no-repeat center/contain;
-				width: 14px;
-				height: 9px;
+.slider-links .swiper-button-prev,
+.slider-links .swiper-button-next {
+				background: url(images/icons/arrow-slider.png) no-repeat center/contain;
+				width: 29px;
+				height: 29px;
 				display: block;
 				position: absolute;
 				cursor: pointer;
 				z-index: 3;
+				-webkit-transition: all 3ms ease-in-out;
+				transition: all 3ms ease-in-out;
 }
-.slider-links .swiper.swiper-wrapper .swiper-button-prev {
-				-webkit-transform: rotate(90deg);
-				        transform: rotate(90deg);
+.slider-links .swiper-button-prev:hover,
+.slider-links .swiper-button-next:hover {
+				scale: 1.1;
+				-webkit-transition: all 3ms ease-in-out;
+				transition: all 3ms ease-in-out;
+}
+.slider-links .swiper-button-prev {
+				-webkit-transform: rotate(180deg);
+				        transform: rotate(180deg);
 				top: 26%;
-				left: -35px;
+				left: 3%;
 				z-index: 3;
 }
 @media only screen and (max-width: 1260px) {
-				.slider-links .swiper.swiper-wrapper .swiper-button-prev {
+				.slider-links .swiper-button-prev {
 								width: 20px;
 								height: 20px;
 								top: 88%;
@@ -3091,19 +3098,19 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				}
 }
 @media only screen and (max-width: 900px) {
-				.slider-links .swiper.swiper-wrapper .swiper-button-prev {
+				.slider-links .swiper-button-prev {
 								top: 40%;
 				}
 }
-.slider-links .swiper.swiper-wrapper .swiper-button-next {
-				-webkit-transform: rotate(-90deg);
-				        transform: rotate(-90deg);
+.slider-links .swiper-button-next {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
 				top: 26%;
-				right: -35px;
+				right: 3%;
 				z-index: 3;
 }
 @media only screen and (max-width: 1260px) {
-				.slider-links .swiper.swiper-wrapper .swiper-button-next {
+				.slider-links .swiper-button-next {
 								width: 20px;
 								height: 20px;
 								top: 88%;
@@ -3111,14 +3118,14 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				}
 }
 @media only screen and (max-width: 900px) {
-				.slider-links .swiper.swiper-wrapper .swiper-button-next {
+				.slider-links .swiper-button-next {
 								top: 40%;
 				}
 }
-.slider-links .swiper.swiper-wrapper.swiper {
+.slider-links.swiper {
 				position: unset;
 }
-.slider-links .swiper.swiper-wrapper .swiper-wrapper {
+.slider-links .swiper-wrapper {
 				text-align: center;
 				-webkit-box-align: center;
 				    -ms-flex-align: center;
@@ -3131,23 +3138,24 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				z-index: 1;
 }
 @media only screen and (max-width: 900px) {
-				.slider-links .swiper.swiper-wrapper .swiper-wrapper {
+				.slider-links .swiper-wrapper {
 								gap: 0;
 								margin-bottom: 0;
 				}
 }
-.slider-links .swiper.swiper-wrapper .swiper-pagination {
+.slider-links .swiper-pagination {
 				width: 100%;
 				margin: 0 auto;
 				height: 50px;
-				display: inline;
+				display: block;
+				text-align: center;
 }
 @media only screen and (max-width: 768px) {
-				.slider-links .swiper.swiper-wrapper .swiper-pagination {
+				.slider-links .swiper-pagination {
 								display: none;
 				}
 }
-.slider-links .swiper.swiper-wrapper .swiper-pagination .swiper-pagination-bullet {
+.slider-links .swiper-pagination .swiper-pagination-bullet {
 				width: 10px;
 				height: 10px;
 				margin: 0 15px;
@@ -3157,7 +3165,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				background-color: #DFEDF3;
 				border-radius: 10px;
 }
-.slider-links .swiper.swiper-wrapper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.slider-links .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
 				background-color: #54A8C7;
 }
 /*# sourceMappingURL=style.css.map */

@@ -38,7 +38,7 @@
         padding: 0 15px;
 
         img {
-            max-width: 320px;
+            //max-width: 320px;
             margin-bottom: 20px;
         }
 
@@ -56,98 +56,106 @@
         }
     }
 
-    .swiper.swiper-wrapper {
 
-        .swiper-button-prev,
-        .swiper-button-next {
-            background: url(images/icons/arrow-slider.svg) no-repeat center/contain;
-            width: 14px;
-            height: 9px;
-            display: block;
-            position: absolute;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background: url(images/icons/arrow-slider.png) no-repeat center/contain;
+        width: 29px;
+        height: 29px;
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        z-index: 3;
+        transition: all 3ms ease-in-out;
+
+        &:hover {
+            scale: (1.1);
+            transition: all 3ms ease-in-out;
+
+        }
+    }
+
+    .swiper-button-prev {
+        transform: rotate(180deg);
+        top: 26%;
+        left: 3%;
+        z-index: 3;
+
+        @include responsive('desktop-m') {
+            width: 20px;
+            height: 20px;
+            top: 88%;
+            left: 0;
+        }
+
+        @include responsive('tablet-v') {
+            top: 40%;
+        }
+    }
+
+    .swiper-button-next {
+        transform: rotate(0deg);
+        top: 26%;
+        right: 3%;
+        z-index: 3;
+
+        @include responsive('desktop-m') {
+            width: 20px;
+            height: 20px;
+            top: 88%;
+            right: 0;
+        }
+
+        @include responsive('tablet-v') {
+            top: 40%;
+        }
+    }
+
+    &.swiper {
+        position: unset;
+    }
+
+    .swiper-wrapper {
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 40px;
+        z-index: 1;
+        //gap: 40px;
+
+        @include responsive('tablet-v') {
+            gap: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .swiper-pagination {
+        width: 100%;
+        margin: 0 auto;
+        height: 50px;
+        display: block;
+        text-align: center;
+
+        @include responsive('mobile-h') {
+            display: none;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            margin: 0 15px;
+            display: inline-block;
             cursor: pointer;
-            z-index: 3;
-        }
+            vertical-align: middle;
+            background-color: $secondary-blue;
+            border-radius: 10px;
 
-        .swiper-button-prev {
-            transform: rotate(90deg);
-            top: 26%;
-            left: -35px;
-            z-index: 3;
-
-            @include responsive('desktop-m') {
-                width: 20px;
-                height: 20px;
-                top: 88%;
-                left: 0;
-            }
-
-            @include responsive('tablet-v') {
-                top: 40%;
-            }
-        }
-
-        .swiper-button-next {
-            transform: rotate(-90deg);
-            top: 26%;
-            right: -35px;
-            z-index: 3;
-
-            @include responsive('desktop-m') {
-                width: 20px;
-                height: 20px;
-                top: 88%;
-                right: 0;
-            }
-
-            @include responsive('tablet-v') {
-                top: 40%;
-            }
-        }
-
-        &.swiper {
-            position: unset;
-        }
-
-        .swiper-wrapper {
-            text-align: center;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            margin-bottom: 40px;
-            z-index: 1;
-            //gap: 40px;
-
-            @include responsive('tablet-v') {
-                gap: 0;
-                margin-bottom: 0;
-            }
-        }
-
-        .swiper-pagination {
-            width: 100%;
-            margin: 0 auto;
-            height: 50px;
-            display: inline;
-
-            @include responsive('mobile-h') {
-                display: none;
-            }
-
-            .swiper-pagination-bullet {
-                width: 10px;
-                height: 10px;
-                margin: 0 15px;
-                display: inline-block;
-                cursor: pointer;
-                vertical-align: middle;
-                background-color: $secondary-blue;
-                border-radius: 10px;
-
-                &.swiper-pagination-bullet-active {
-                    background-color: $secondary-color;
-                }
+            &.swiper-pagination-bullet-active {
+                background-color: $secondary-color;
             }
         }
     }
+
 }

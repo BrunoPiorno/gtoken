@@ -127,6 +127,45 @@ jQuery(document).ready(function ($) {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
+
 	});
 
 });
+
+
+
+//swiper
+/* if (document.querySelector('.swiper-container')) {
+	const opciones = {
+		loop: true,
+		autoplay: {
+			delay: 4000
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+			type: "bullets",
+			disableOnInteraction: false,
+			dynamicBullets: false
+		},
+
+		slidesPerView: 1,
+		loopedSlides: 1,
+
+		breakpoints: {
+			480: {
+				slidesPerView: 2,
+				loopedSlides: 2
+			},
+			900: {
+				slidesPerView: 6,
+				loopedSlides: 2
+			}
+		}
+	}
+	new Swiper('.swiper-container', opciones);
+} */
