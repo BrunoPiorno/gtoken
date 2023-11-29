@@ -137,12 +137,16 @@ jQuery(document).ready(function ($) {
 			loopedSlides: 1,
 
 			breakpoints: {
-				480: {
-					slidesPerView: 2,
+				600: {
+					slidesPerView: 1,
 					loopedSlides: 2
 				},
 				900: {
-					slidesPerView: 3,
+					slidesPerView: 2,
+					loopedSlides: 2
+				},
+				1100: {
+					slidesPerView: 2,
 					loopedSlides: 2
 				}
 			}

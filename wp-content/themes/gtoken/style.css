@@ -2873,10 +2873,6 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				cursor: pointer;
 				-webkit-transition: all 0.3s ease;
 				transition: all 0.3s ease;
-				/*   &.js-open {
-				    display: flex;
-				    flex-direction: column;
-				} */
 }
 .accordion--faqs .accordion__item:last-child {
 				border-bottom: none;
@@ -2885,12 +2881,16 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				-webkit-transform: translate(10px);
 				        transform: translate(10px);
 }
+.accordion--faqs .accordion__item.js-open .accordion__question::after {
+				-webkit-transform: rotate(-180deg);
+				        transform: rotate(-180deg);
+}
 .accordion--faqs .accordion__answer {
 				font-size: clamp(18px, 11.4px + 0.011 * 100vw, 24px);
 				font-weight: 400;
 				line-height: 1.4;
 				color: #ffffff;
-				padding-top: 10px;
+				padding-top: 20px;
 				font-style: italic;
 				display: none;
 }
@@ -3124,6 +3124,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				height: 120px;
 				-o-object-fit: contain;
 				   object-fit: contain;
+				float: left;
 }
 .slider-links .swiper-cont .swiper.slider-partners .swiper-button-prev,
 .slider-links .swiper-cont .swiper.slider-partners .swiper-button-next {
