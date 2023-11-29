@@ -8,7 +8,7 @@
             "name": "title",
             "aria-label": "",
             "type": "textarea",
-            "instructions": "[Para cambiar de estilo]",
+            "instructions": "Utilizar [  ] para cambiar el estilo de tipografía.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -28,7 +28,7 @@
             "name": "text",
             "aria-label": "",
             "type": "wysiwyg",
-            "instructions": "",
+            "instructions": "( Enter ) para saltos de línea automáticos",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -101,5 +101,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701286817
+    "modified": 1701290928
 }

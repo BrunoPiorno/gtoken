@@ -47,7 +47,7 @@
             $target = esc_attr($video_youtube['target']);
             $title = esc_html($video_youtube['title']);
             
-            echo '<div class="number_grid__link">Mira nuestro <a href="' . $url . '" target="' . $target . '">' . $title . '</a></div>';
+            echo '<div class="number_grid__link">Mirá nuestro <a href="' . $url . '" target="' . $target . '">' . $title . '</a></div>';
         } ?>
 
         </div>

@@ -1,6 +1,8 @@
 .image-text {
     position: relative;
 
+    padding-bottom: rv(60px, 110px);
+
     &::after {
         content: '';
         background-color: $light-blue-color;
@@ -24,7 +26,7 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        width: 856px;
+        width: 690px;
         max-width: 100%;
         //justify-content: flex-start;
         //align-self: flex-start;
@@ -67,10 +69,21 @@
     }
 
     &__title {
-        font-size: rv(18px, 55px);
-        font-weight: 700;
+        font-size: rv(36px, 75px);
+        //font-weight: 700;
+        font-weight: 400;
         font-family: $secondary-font;
         color: $white;
-        margin-top: 20px;
+        margin-top: 70px;
+        line-height: 1;
+        max-width: 480px;
+    }
+
+    &__text {
+        font-family: $default-font;
+        font-size: rv(18px, 24px);
+        font-style: italic;
+        line-height: 1.4;
+        color: $light-black;
     }
 }
