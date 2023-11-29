@@ -2849,18 +2849,44 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				font-weight: 400;
 				line-height: 1;
 				font-style: italic;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: justify;
+				    -ms-flex-pack: justify;
+				        justify-content: space-between;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+}
+.accordion--faqs .accordion__question::after {
+				content: "";
+				background: url(images/icons/arrow-select-pink.png) no-repeat center/contain;
+				display: inline-block;
+				width: 29px;
+				height: 29px;
 }
 .accordion--faqs .accordion__item {
-				padding: 30px 0 30px 64px;
+				padding: 30px 30px 30px 64px;
 				border-bottom: 1px solid #FB3BA5;
 				width: 100%;
 				cursor: pointer;
+				-webkit-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				/*   &.js-open {
+				    display: flex;
+				    flex-direction: column;
+				} */
 }
 .accordion--faqs .accordion__item:last-child {
 				border-bottom: none;
 }
+.accordion--faqs .accordion__item:hover .accordion__question {
+				-webkit-transform: translate(10px);
+				        transform: translate(10px);
+}
 .accordion--faqs .accordion__answer {
-				font-size: clamp(18px, 9px + 0.015 * 100vw, 26px);
+				font-size: clamp(18px, 11.4px + 0.011 * 100vw, 24px);
 				font-weight: 400;
 				line-height: 1.4;
 				color: #ffffff;
@@ -2909,11 +2935,13 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				height: 750px;
 				-o-object-fit: cover;
 				   object-fit: cover;
+				margin-top: 50px;
 }
 .image-text__image__logo {
 				position: absolute;
 				top: 0;
 				left: 0;
+				max-width: 220px;
 }
 .image-text__image__logo img {
 				width: auto;

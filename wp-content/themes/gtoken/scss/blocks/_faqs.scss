@@ -8,21 +8,45 @@
         font-weight: 400;
         line-height: 1;
         font-style: italic;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &::after {
+            content: '';
+            background: url(images/icons/arrow-select-pink.png) no-repeat center/contain;
+            display: inline-block;
+            width: 29px;
+            height: 29px;
+        }
     }
 
     .accordion__item {
-        padding: 30px 0 30px 64px;
+        padding: 30px 30px 30px 64px;
         border-bottom: 1px solid $pink-color;
         width: 100%;
         cursor: pointer;
+        transition: all 0.3s ease;
 
         &:last-child {
             border-bottom: none;
         }
+
+        &:hover {
+            .accordion__question {
+                transform: translate(10px);
+            }
+        }
+
+        /*   &.js-open {
+            display: flex;
+            flex-direction: column;
+        } */
     }
 
     .accordion__answer {
-        font-size: rv(18px, 26px);
+        font-size: rv(18px, 24px);
         font-weight: 400;
         line-height: 1.4;
         color: $white;

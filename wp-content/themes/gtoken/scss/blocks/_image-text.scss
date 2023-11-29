@@ -37,12 +37,14 @@
             width: auto;
             height: 750px;
             object-fit: cover;
+            margin-top: 50px;
         }
 
         &__logo {
             position: absolute;
             top: 0;
             left: 0;
+            max-width: 220px;
 
             img {
                 width: auto;
