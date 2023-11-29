@@ -122,6 +122,10 @@ jQuery(document).ready(function ($) {
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
+			clickable: true,
+			type: "bullets",
+			disableOnInteraction: false,
+			dynamicBullets: false
 		},
 		navigation: {
 			nextEl: '.swiper-button-next',

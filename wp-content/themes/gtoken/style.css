@@ -3190,6 +3190,9 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				position: relative;
 				margin-bottom: 40px;
 				z-index: 1;
+				width: 100vw;
+				max-width: 100vw;
+				overflow: visible;
 }
 @media only screen and (max-width: 900px) {
 				.slider-links .swiper-wrapper {
