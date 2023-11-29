@@ -1,6 +1,7 @@
 .accordion--faqs {
     padding-top: rv(60px, 125px);
     padding-bottom: rv(60px, 125px);
+    position: relative;
 
     .accordion__question {
         color: $pink-color;
@@ -54,5 +55,17 @@
         padding: 0 30px 20px 64px;
         font-style: italic;
         display: none;
+    }
+
+    &::before {
+        content: '';
+        background: url(images/icons/barra.svg) no-repeat center/contain;
+        display: inline-block;
+        position: absolute;
+        top: auto;
+        bottom: 100%;
+        left: 0;
+        width: 68%;
+        height: 14px;
     }
 }

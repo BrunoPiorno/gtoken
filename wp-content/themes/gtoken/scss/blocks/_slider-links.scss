@@ -31,6 +31,12 @@
                     float: left;
                 }
             }
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
 
         .swiper.slider-partners {
@@ -44,6 +50,11 @@
                 position: absolute;
                 cursor: pointer;
                 z-index: 3;
+
+                &:hover {
+                    scale: (1.1);
+                    transition: all 3ms ease;
+                }
             }
 
             .swiper-button-prev {
@@ -92,9 +103,10 @@
 
                         p {
                             color: $black;
-                            font-size: 35px;
+                            font-size: rv(20px, 35px);
                             width: 348px;
                             max-width: 100%;
+                            text-align: left;
                         }
                     }
                 }
@@ -120,6 +132,7 @@
                 margin: 0 auto;
                 height: 50px;
                 display: inline;
+                display: none;
 
                 @include responsive('mobile-h') {
                     display: none;

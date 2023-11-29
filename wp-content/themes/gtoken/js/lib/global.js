@@ -138,7 +138,7 @@ jQuery(document).ready(function ($) {
 					loopedSlides: 2
 				},
 				1100: {
-					slidesPerView: 2,
+					slidesPerView: 3,
 					loopedSlides: 2
 				}
 			}

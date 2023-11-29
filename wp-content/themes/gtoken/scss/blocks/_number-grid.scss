@@ -14,7 +14,7 @@
             font-weight: 500;
             line-height: 1;
             color: $light-black;
-            font-family: $secondary-font;
+            font-family: $druk-condensed;
             max-height: 240px;
 
         }
@@ -23,7 +23,7 @@
             font-size: rv(25px, 80px);
             font-weight: 500;
             color: $white;
-            font-family: $secondary-font;
+            font-family: $druk-condensed;
             line-height: 1;
             max-width: 200px;
         }
@@ -62,22 +62,22 @@
 
         .number_content {
             color: $white;
-            font-size: rv(18px, 22px);
+            font-size: rv(18px, 24px);
             font-style: italic;
-
+            line-height: 1.4;
         }
     }
 
     &__link {
         padding-top: 40px;
-        font-size: rv(24px, 36px);
+        font-size: rv(24px, 60px);
         font-style: italic;
         font-weight: 400;
         color: $white;
         @include fade(-100px, 0, true, 4);
 
         a {
-            color: $black;
+            color: $white;
             text-decoration: none;
             text-transform: capitalize;
         }
@@ -87,8 +87,8 @@
             background: url(images/icons/arrow-select.png) no-repeat center/contain;
             margin-right: 20px;
             display: inline-block;
-            width: 20px;
-            height: 20px;
+            width: 29px;
+            height: 29px;
         }
     }
 }
