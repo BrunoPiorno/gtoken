@@ -45,6 +45,7 @@
                 line-height: 1;
                 font-weight: 500;
                 //text-transform: uppercase;
+                @include fade(-100px, 0, true, 0);
 
                 @if editor() {
                     font-size: 100px;

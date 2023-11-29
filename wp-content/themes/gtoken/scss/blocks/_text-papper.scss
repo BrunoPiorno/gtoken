@@ -24,6 +24,8 @@
                 //text-transform: uppercase;
                 color: $light-black;
 
+                @include fade(0, 100px, true, 0);
+
                 span {
                     color: $pink-color;
                     font-style: italic;
@@ -42,6 +44,7 @@
                 color: $black;
                 font-weight: 400;
                 line-height: 1.5;
+                @include fade(0, 100px, true, 1);
             }
         }
 
@@ -50,6 +53,7 @@
             justify-content: center;
             align-items: center;
             margin-top: 34px;
+            @include fade(-100px, 0, true, 2);
 
             &__text {
                 font-size: rv(26px, 60px);
@@ -62,13 +66,11 @@
             a {
                 font-size: rv(26px, 60px);
                 text-decoration: none;
-                color: $light-blue;
+                color: $light-black;
                 text-transform: capitalize;
                 font-weight: 400;
                 line-height: 1;
                 font-style: italic;
-
-
             }
 
             &::before {

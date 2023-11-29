@@ -28,7 +28,7 @@ $title = get_field('title');
 $media_type = get_field('video_o_imagen');  ?>
 
 <!-- Hero Home -->
-<section class="wrapper wrapper--hero">
+<section class="wrapper wrapper--hero" data-waypoint="0">
     <section class="hero hero--home">
         <?php if ($media_type && $video): ?>
             <div class="hero__video">
