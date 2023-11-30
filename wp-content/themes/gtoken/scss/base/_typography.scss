@@ -5,3 +5,16 @@
     src: url('./fonts/Druk-Medium.woff2') format('woff2'),
         url('./fonts/Druk-Medium.woff') format('truetype')
 }
+
+@font-face {
+    font-family: 'Calluna';
+    @folder: 'Calluna/regular';
+    @name: 'Calluna-Regular';
+    src: url("@{base-url}/@{folder}/@{name}.eot");
+    src: url("@{base-url}/@{folder}/@{name}.eot?#iefix") format('embedded-opentype'),
+    url("@{base-url}/@{folder}/@{name}.woff") format('woff'),
+    url("@{base-url}/@{folder}/@{name}.ttf") format('truetype'),
+    url("@{base-url}/@{folder}/@{name}.svg#") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

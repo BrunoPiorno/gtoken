@@ -60,6 +60,15 @@ Se usa igual que fade, pero crea un loop para animar los elementos de forma orde
 				font-family: "Druk-Medium";
 				src: url("./fonts/Druk-Medium.woff2") format("woff2"), url("./fonts/Druk-Medium.woff") format("truetype");
 }
+@font-face {
+				font-family: "Calluna";
+				@folder : "Calluna/regular";
+				@name : "Calluna-Regular";
+				src: url("@{base-url}/@{folder}/@{name}.eot");
+				src: url("@{base-url}/@{folder}/@{name}.eot?#iefix") format("embedded-opentype"), url("@{base-url}/@{folder}/@{name}.woff") format("woff"), url("@{base-url}/@{folder}/@{name}.ttf") format("truetype"), url("@{base-url}/@{folder}/@{name}.svg#") format("svg");
+				font-weight: normal;
+				font-style: normal;
+}
 html {
 				-webkit-box-sizing: border-box;
 				        box-sizing: border-box;
@@ -2753,6 +2762,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 .text-papper .content__text .title {
 				font-size: clamp(50px, -24.4px + 0.124 * 100vw, 118px);
+				font-family: "Calluna";
 				color: #231F20;
 				line-height: 1;
 				font-weight: 300;
