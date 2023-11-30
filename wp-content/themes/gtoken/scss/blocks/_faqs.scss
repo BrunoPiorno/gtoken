@@ -13,6 +13,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: all 0.3s ease;
 
         &::after {
             content: '';
@@ -20,6 +21,7 @@
             display: inline-block;
             width: 29px;
             height: 29px;
+            transition: all 0.3s ease;
         }
     }
 
@@ -41,7 +43,7 @@
 
         &.js-open {
             .accordion__question::after {
-                transform: rotate(-180deg);
+                transform: rotate(-95deg);
 
             }
         }
