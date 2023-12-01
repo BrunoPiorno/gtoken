@@ -118,4 +118,15 @@ function change_message( $message, $form ) {
 function post_remove () { 
    remove_menu_page('edit.php');
 }
-add_action('admin_menu', 'post_remove');  
+add_action('admin_menu', 'post_remove');
+
+add_filter( 'body_class', 'pll_plugin_body_class' );
+function pll_plugin_body_class( $classes )
+{
+    if ( function_exists( 'PLL' ) && $language = PLL()->model->get_language( get_locale() ) )
+    {
+        $classes[] = 'pll-' . str_replace( '_', '-', sanitize_title_with_dashes( $language->get_locale( 'raw' ) ) );
+    }
+
+    return $classes;
+}
