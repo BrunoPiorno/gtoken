@@ -11,7 +11,6 @@
 
 			
 				<div class="site-footer__logo-column__two">
-					<?php get_template_part('modules/components/copyright',null, ['footer' => true] ); ?>
 					<?php echo ($direccion = get_field('direccion','option'))? '<div class="direccion">'.$direccion.'</div>':''; ?>
 					<?php if ($email = get_field('email', 'option')) {
 						echo '<div class="email"><a href="mailto:' . esc_html($email) . '">' . esc_html($email) . '</a></div>';
@@ -26,10 +25,9 @@
 				</div>
 				<div class="site-footer__logo-column__three">
 					<?php get_template_part('modules/components/socials',null, ['footer' => true] ); ?>
-				</dov>
-
+				</div>
 			</div>
-			
+			<?php get_template_part('modules/components/copyright',null, ['footer' => true] ); ?>
 		</div>
 
 	</footer><!-- #colophon -->
