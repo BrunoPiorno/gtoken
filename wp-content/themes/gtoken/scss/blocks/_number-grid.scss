@@ -121,6 +121,12 @@
             display: inline-block;
             width: 29px;
             height: 29px;
+
+            @include responsive('mobile-h') {
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 }

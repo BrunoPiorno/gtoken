@@ -1959,6 +1959,11 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 								        align-items: flex-start;
 				}
 }
+@media only screen and (max-width: 768px) {
+				.text-papper .content {
+								gap: 40px;
+				}
+}
 .text-papper .content__text .title {
 				font-size: clamp(50px, -24.4px + 0.124 * 100vw, 118px);
 				font-family: "Calluna";
@@ -1985,6 +1990,11 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 								display: none;
 				}
 }
+@media only screen and (max-width: 768px) {
+				.text-papper .content__text .title {
+								font-size: 40px;
+				}
+}
 .text-papper .content__text .title span {
 				color: #FB3BA5;
 				font-style: italic;
@@ -2000,6 +2010,11 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 @media only screen and (max-width: 900px) {
 				.text-papper .content__text .title span {
 								font-size: 70px;
+				}
+}
+@media only screen and (max-width: 768px) {
+				.text-papper .content__text .title span {
+								font-size: 50px;
 				}
 }
 .text-papper .content__description {
@@ -2123,6 +2138,13 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				width: 29px;
 				height: 29px;
 }
+@media only screen and (max-width: 768px) {
+				.text-papper .content__link::before {
+								margin-right: 10px;
+								width: 20px;
+								height: 20px;
+				}
+}
 
 .accordion--faqs {
 				padding-top: clamp(60px, -10.8px + 0.118 * 100vw, 125px);
@@ -2151,6 +2173,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 @media only screen and (max-width: 768px) {
 				.accordion--faqs .accordion__question {
 								padding: 30px 0;
+								gap: 20px;
 				}
 }
 .accordion--faqs .accordion__question::after {
@@ -2161,6 +2184,12 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				height: 29px;
 				-webkit-transition: all 0.3s ease;
 				transition: all 0.3s ease;
+}
+@media only screen and (max-width: 768px) {
+				.accordion--faqs .accordion__question::after {
+								width: 20px;
+								height: 20px;
+				}
 }
 .accordion--faqs .accordion__item {
 				border-bottom: 1px solid #FB3BA5;
@@ -2459,6 +2488,13 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				display: inline-block;
 				width: 29px;
 				height: 29px;
+}
+@media only screen and (max-width: 768px) {
+				.number_grid__link::before {
+								margin-right: 10px;
+								width: 20px;
+								height: 20px;
+				}
 }
 
 .slider-links {

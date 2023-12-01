@@ -15,6 +15,10 @@
             align-items: flex-start;
         }
 
+        @include responsive('mobile-h') {
+            gap: 40px;
+        }
+
         &__text {
 
             .title {
@@ -40,6 +44,9 @@
                     }
                 }
 
+                @include responsive('mobile-h') {
+                    font-size: 40px;
+                }
 
 
                 span {
@@ -55,6 +62,10 @@
 
                     @include responsive('tablet-v') {
                         font-size: 70px;
+                    }
+
+                    @include responsive('mobile-h') {
+                        font-size: 50px;
                     }
                 }
             }
@@ -124,6 +135,12 @@
                 display: inline-block;
                 width: 29px;
                 height: 29px;
+
+                @include responsive('mobile-h') {
+                    margin-right: 10px;
+                    width: 20px;
+                    height: 20px;
+                }
             }
         }
     }

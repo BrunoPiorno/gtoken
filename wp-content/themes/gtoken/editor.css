@@ -1918,6 +1918,11 @@ Blocks Styles
 								        align-items: flex-start;
 				}
 }
+@media only screen and (max-width: 768px) {
+				.editor-styles-wrapper .acf-block-preview .text-papper .content {
+								gap: 40px;
+				}
+}
 .editor-styles-wrapper .acf-block-preview .text-papper .content__text .title {
 				font-size: clamp(50px, -24.4px + 0.124 * 100vw, 118px);
 				font-family: "Calluna";
@@ -1944,6 +1949,11 @@ Blocks Styles
 								display: none;
 				}
 }
+@media only screen and (max-width: 768px) {
+				.editor-styles-wrapper .acf-block-preview .text-papper .content__text .title {
+								font-size: 40px;
+				}
+}
 .editor-styles-wrapper .acf-block-preview .text-papper .content__text .title span {
 				color: #FB3BA5;
 				font-style: italic;
@@ -1959,6 +1969,11 @@ Blocks Styles
 @media only screen and (max-width: 900px) {
 				.editor-styles-wrapper .acf-block-preview .text-papper .content__text .title span {
 								font-size: 70px;
+				}
+}
+@media only screen and (max-width: 768px) {
+				.editor-styles-wrapper .acf-block-preview .text-papper .content__text .title span {
+								font-size: 50px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .text-papper .content__description {
@@ -2082,6 +2097,13 @@ Blocks Styles
 				width: 29px;
 				height: 29px;
 }
+@media only screen and (max-width: 768px) {
+				.editor-styles-wrapper .acf-block-preview .text-papper .content__link::before {
+								margin-right: 10px;
+								width: 20px;
+								height: 20px;
+				}
+}
 .editor-styles-wrapper .acf-block-preview .accordion--faqs {
 				padding-top: clamp(60px, -10.8px + 0.118 * 100vw, 125px);
 				padding-bottom: clamp(60px, -10.8px + 0.118 * 100vw, 125px);
@@ -2109,6 +2131,7 @@ Blocks Styles
 @media only screen and (max-width: 768px) {
 				.editor-styles-wrapper .acf-block-preview .accordion--faqs .accordion__question {
 								padding: 30px 0;
+								gap: 20px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .accordion--faqs .accordion__question::after {
@@ -2119,6 +2142,12 @@ Blocks Styles
 				height: 29px;
 				-webkit-transition: all 0.3s ease;
 				transition: all 0.3s ease;
+}
+@media only screen and (max-width: 768px) {
+				.editor-styles-wrapper .acf-block-preview .accordion--faqs .accordion__question::after {
+								width: 20px;
+								height: 20px;
+				}
 }
 .editor-styles-wrapper .acf-block-preview .accordion--faqs .accordion__item {
 				border-bottom: 1px solid #FB3BA5;
@@ -2415,6 +2444,13 @@ Blocks Styles
 				display: inline-block;
 				width: 29px;
 				height: 29px;
+}
+@media only screen and (max-width: 768px) {
+				.editor-styles-wrapper .acf-block-preview .number_grid__link::before {
+								margin-right: 10px;
+								width: 20px;
+								height: 20px;
+				}
 }
 .editor-styles-wrapper .acf-block-preview .slider-links {
 				padding-top: clamp(84px, 84px + 0 * 100vw, 84px);
