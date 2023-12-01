@@ -59,6 +59,10 @@
                 @include responsive('tablet-h') {
                     font-size: 120px;
                 }
+
+                @include responsive('mobile-h') {
+                    font-size: 60px;
+                }
             }
 
 

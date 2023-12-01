@@ -110,6 +110,10 @@
                 line-height: 1;
                 font-style: italic;
                 font-family: $calluna;
+
+                &:hover {
+                    opacity: 0.5;
+                }
             }
 
             &::before {

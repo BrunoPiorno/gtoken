@@ -3,7 +3,7 @@
     padding-bottom: rv(60px, 110px);
 
     @include responsive('desktop-l') {
-        background-color: $light-blue-color;
+        //background-color: $light-blue-color;
     }
 
     &::after {
@@ -16,18 +16,13 @@
         height: 456px;
     }
 
-    @include responsive('desktop-l') {
-        &::after {
-            display: none;
-        }
-    }
 
     &__cont {
         display: flex;
         align-items: center;
 
         @include responsive('desktop-l') {
-            flex-direction: column;
+            // flex-direction: column;
         }
     }
 
@@ -86,6 +81,10 @@
         margin-top: 70px;
         line-height: 1;
         max-width: 480px;
+
+        @include responsive('desktop-xl') {
+            font-size: 55px;
+        }
     }
 
     &__text {

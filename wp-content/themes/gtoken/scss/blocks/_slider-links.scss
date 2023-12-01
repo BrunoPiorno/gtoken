@@ -108,6 +108,10 @@
                             width: 348px;
                             max-width: 100%;
                             text-align: left;
+
+                            &:hover {
+                                opacity: 0.5;
+                            }
                         }
                     }
                 }

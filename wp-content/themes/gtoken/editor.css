@@ -849,6 +849,11 @@ Blocks Styles
 								font-size: 120px;
 				}
 }
+@media only screen and (max-width: 768px) {
+				.editor-styles-wrapper .acf-block-preview .hero--home .hero__text .title {
+								font-size: 60px;
+				}
+}
 .editor-styles-wrapper .acf-block-preview .hero--home .hero__text p {
 				font-size: clamp(20px, 0.2px + 0.033 * 100vw, 38px);
 				line-height: 1.26;
@@ -2065,6 +2070,9 @@ Blocks Styles
 				font-style: italic;
 				font-family: "Calluna";
 }
+.editor-styles-wrapper .acf-block-preview .text-papper .content__link a:hover {
+				opacity: 0.5;
+}
 .editor-styles-wrapper .acf-block-preview .text-papper .content__link::before {
 				content: "";
 				background: url(images/icons/arrow-select-pink.png) no-repeat center/contain;
@@ -2159,11 +2167,6 @@ Blocks Styles
 				position: relative;
 				padding-bottom: clamp(60px, 5.4px + 0.091 * 100vw, 110px);
 }
-@media only screen and (max-width: 1500px) {
-				.editor-styles-wrapper .acf-block-preview .image-text {
-								background-color: #3ACBED;
-				}
-}
 .editor-styles-wrapper .acf-block-preview .image-text::after {
 				content: "";
 				background-color: #3ACBED;
@@ -2173,11 +2176,6 @@ Blocks Styles
 				width: 100%;
 				height: 456px;
 }
-@media only screen and (max-width: 1500px) {
-				.editor-styles-wrapper .acf-block-preview .image-text::after {
-								display: none;
-				}
-}
 .editor-styles-wrapper .acf-block-preview .image-text__cont {
 				display: -webkit-box;
 				display: -ms-flexbox;
@@ -2185,14 +2183,6 @@ Blocks Styles
 				-webkit-box-align: center;
 				    -ms-flex-align: center;
 				        align-items: center;
-}
-@media only screen and (max-width: 1500px) {
-				.editor-styles-wrapper .acf-block-preview .image-text__cont {
-								-webkit-box-orient: vertical;
-								-webkit-box-direction: normal;
-								    -ms-flex-direction: column;
-								        flex-direction: column;
-				}
 }
 .editor-styles-wrapper .acf-block-preview .image-text__content {
 				display: -webkit-box;
@@ -2250,6 +2240,11 @@ Blocks Styles
 				margin-top: 70px;
 				line-height: 1;
 				max-width: 480px;
+}
+@media only screen and (max-width: 1680px) {
+				.editor-styles-wrapper .acf-block-preview .image-text__title {
+								font-size: 55px;
+				}
 }
 .editor-styles-wrapper .acf-block-preview .image-text__text {
 				font-family: "Bitter", serif;
@@ -2410,6 +2405,9 @@ Blocks Styles
 				text-transform: capitalize;
 				font-family: "Calluna";
 }
+.editor-styles-wrapper .acf-block-preview .number_grid__link a:hover {
+				opacity: 0.5;
+}
 .editor-styles-wrapper .acf-block-preview .number_grid__link::before {
 				content: "";
 				background: url(images/icons/arrow-select.png) no-repeat center/contain;
@@ -2528,6 +2526,9 @@ Blocks Styles
 				width: 348px;
 				max-width: 100%;
 				text-align: left;
+}
+.editor-styles-wrapper .acf-block-preview .slider-links .swiper-cont .swiper.slider-partners.swiper .item a p:hover {
+				opacity: 0.5;
 }
 .editor-styles-wrapper .acf-block-preview .slider-links .swiper-cont .swiper.slider-partners .swiper-wrapper {
 				text-align: center;
