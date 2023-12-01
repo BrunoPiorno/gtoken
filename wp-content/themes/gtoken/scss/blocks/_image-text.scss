@@ -1,7 +1,10 @@
 .image-text {
     position: relative;
-
     padding-bottom: rv(60px, 110px);
+
+    @include responsive('desktop-l') {
+        background-color: $light-blue-color;
+    }
 
     &::after {
         content: '';
@@ -11,15 +14,21 @@
         z-index: -1;
         width: 100%;
         height: 456px;
+    }
 
+    @include responsive('desktop-l') {
+        &::after {
+            display: none;
+        }
     }
 
     &__cont {
         display: flex;
         align-items: center;
 
-
-
+        @include responsive('desktop-l') {
+            flex-direction: column;
+        }
     }
 
     &__content {

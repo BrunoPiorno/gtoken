@@ -16,6 +16,7 @@
         }
 
         &__text {
+
             .title {
                 font-size: rv(50px, 118px);
                 font-family: $calluna;
@@ -76,6 +77,10 @@
                 font-weight: 400;
                 line-height: 1.5;
                 @include fade(0, 100px, true, 1);
+            }
+
+            .text {
+                @include list-styles();
             }
         }
 

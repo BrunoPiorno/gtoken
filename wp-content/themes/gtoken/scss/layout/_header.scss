@@ -74,7 +74,6 @@
 		opacity: 0;
 		@include tre(.5s);
 		box-shadow: 0px 0px 25px 0px rgba(70, 92, 134, 0.10);
-		border-radius: 0 0 10px 10px;
 
 		@include responsive('tablet-h') {
 			z-index: 1;
@@ -91,7 +90,7 @@
 
 	.scrolled & {
 		.container:before {
-			width: 100vw;
+			width: 101vw;
 			opacity: 1;
 		}
 
@@ -102,6 +101,10 @@
 			@include responsive('tablet-h') {
 				top: 27px;
 				width: 90px;
+			}
+
+			@include responsive('mobile-h') {
+				width: 60px;
 			}
 
 			svg {

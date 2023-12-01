@@ -137,7 +137,7 @@
 		display: flex;
 		justify-content: space-between;
 
-		@include responsive('tablet-h') {
+		@include responsive('desktop-m') {
 			flex-direction: column;
 			width: 100%;
 			align-items: center;

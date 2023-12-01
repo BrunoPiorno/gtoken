@@ -1,6 +1,7 @@
 /* Text Block Custom Style */
 
 @mixin text_block() {
+	border: 5px solid blue;
 
 	h1,
 	h2,
@@ -135,13 +136,15 @@
 	ol,
 	ul {
 		margin-left: 25px;
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 		margin-top: rv(15px, 25px);
+		line-height: 1.4;
 	}
 
 	li {
 		list-style: unset;
 		color: $bodyfont;
+		margin-bottom: 15px;
 
 		@include responsive('tablet-h') {
 			line-height: 1.58;
