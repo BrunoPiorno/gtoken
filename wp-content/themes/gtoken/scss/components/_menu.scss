@@ -18,7 +18,7 @@
 	.site-menu {
 		position: absolute;
 		top: 38px;
-		right: 24px;
+		right: 90px;
 		display: flex;
 		gap: 40px;
 		transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -116,7 +116,7 @@
 
 		.scrolled & {
 			top: 35px;
-			right: 15px;
+			right: 90px;
 
 			@include responsive('tablet-h') {
 				top: 0;
