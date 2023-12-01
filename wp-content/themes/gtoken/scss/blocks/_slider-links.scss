@@ -30,6 +30,10 @@
                     object-fit: contain;
                     float: left;
                     margin-bottom: 20px;
+
+                    @include responsive('mobile-h') {
+                        width: 100%;
+                    }
                 }
             }
 
