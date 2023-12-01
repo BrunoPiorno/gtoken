@@ -34,6 +34,10 @@
             max-width: 65%;
             z-index: 2;
 
+            @if editor() {
+                max-width: 80%;
+            }
+
             @include responsive('desktop-s') {
                 max-width: 100%;
             }
@@ -47,10 +51,6 @@
                 //text-transform: uppercase;
                 @include fade(-100px, 0, true, 0);
                 letter-spacing: 20px;
-
-                @if editor() {
-                    font-size: 230px;
-                }
 
                 @include responsive('desktop-l') {
                     font-size: 190px;

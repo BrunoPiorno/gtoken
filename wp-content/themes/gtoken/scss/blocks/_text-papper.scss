@@ -62,6 +62,14 @@
         &__description {
             max-width: 57%;
 
+            @include responsive('desktop-xl') {
+                max-width: 100%;
+
+                br {
+                    display: none;
+                }
+            }
+
             p {
                 font-size: rv(18px, 26px);
                 color: $black;

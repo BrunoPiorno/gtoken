@@ -1977,6 +1977,14 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 .text-papper .content__description {
 				max-width: 57%;
 }
+@media only screen and (max-width: 1680px) {
+				.text-papper .content__description {
+								max-width: 100%;
+				}
+				.text-papper .content__description br {
+								display: none;
+				}
+}
 .text-papper .content__description p {
 				font-size: clamp(18px, 9px + 0.015 * 100vw, 26px);
 				color: #000;
