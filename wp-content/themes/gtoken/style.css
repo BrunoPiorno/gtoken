@@ -2232,6 +2232,12 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				font-family: "Druk-Medium";
 				max-height: 240px;
 }
+@media only screen and (max-width: 1500px) {
+				.number_grid__cont .number {
+								font-size: 200px;
+								max-height: 180px;
+				}
+}
 @media only screen and (max-width: 900px) {
 				.number_grid__cont .number {
 								max-height: 140px;
@@ -2246,6 +2252,11 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				max-width: 200px;
 				text-transform: uppercase;
 }
+@media only screen and (max-width: 1500px) {
+				.number_grid__cont .number_text {
+								font-size: 60px;
+				}
+}
 .number_grid__item {
 				width: 100%;
 				display: -webkit-box;
@@ -2258,7 +2269,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				gap: 40px;
 				min-height: 505px;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1500px) {
 				.number_grid__item {
 								min-height: auto;
 				}

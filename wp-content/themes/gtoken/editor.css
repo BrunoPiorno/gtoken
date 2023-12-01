@@ -2188,6 +2188,12 @@ Blocks Styles
 				font-family: "Druk-Medium";
 				max-height: 240px;
 }
+@media only screen and (max-width: 1500px) {
+				.editor-styles-wrapper .acf-block-preview .number_grid__cont .number {
+								font-size: 200px;
+								max-height: 180px;
+				}
+}
 @media only screen and (max-width: 900px) {
 				.editor-styles-wrapper .acf-block-preview .number_grid__cont .number {
 								max-height: 140px;
@@ -2202,6 +2208,11 @@ Blocks Styles
 				max-width: 200px;
 				text-transform: uppercase;
 }
+@media only screen and (max-width: 1500px) {
+				.editor-styles-wrapper .acf-block-preview .number_grid__cont .number_text {
+								font-size: 60px;
+				}
+}
 .editor-styles-wrapper .acf-block-preview .number_grid__item {
 				width: 100%;
 				display: -webkit-box;
@@ -2214,7 +2225,7 @@ Blocks Styles
 				gap: 40px;
 				min-height: 505px;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1500px) {
 				.editor-styles-wrapper .acf-block-preview .number_grid__item {
 								min-height: auto;
 				}
