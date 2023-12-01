@@ -37,7 +37,6 @@ $e404_button = ( !empty($e404_button) ) ? $e404_button : '';
 			</p>
 			<?php } ?>
 
-			<?php get_template_part('modules/components/button',null,['button'=>$e404_button]); ?>
 		</div>
 	</div><!-- .page-content -->
 </section><!-- .error-404 -->

@@ -29,6 +29,7 @@
                     height: 120px;
                     object-fit: contain;
                     float: left;
+                    margin-bottom: 20px;
                 }
             }
 
@@ -103,7 +104,7 @@
 
                         p {
                             color: $black;
-                            font-size: rv(20px, 35px);
+                            font-size: rv(20px, 23px);
                             width: 348px;
                             max-width: 100%;
                             text-align: left;

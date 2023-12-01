@@ -1,10 +1,26 @@
+.error404 {
+	.header {
+		.site-menu {
+			&__first-level {
+				color: $black;
+			}
+		}
+
+		.site-logo svg {
+			g path {
+				fill: $black;
+			}
+		}
+	}
+}
+
 .header {
 	.site-menu {
 		position: absolute;
 		top: 38px;
 		right: 24px;
 		display: flex;
-		gap: 20px;
+		gap: 40px;
 		transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 
 		@include responsive('tablet-h') {
@@ -40,6 +56,7 @@
 			padding-bottom: 10px;
 			@include tre(.5s);
 			cursor: pointer;
+			font-family: $calluna;
 
 			&:hover {
 				color: $secondary-color;
@@ -78,6 +95,10 @@
 			&__first-level {
 				color: $white;
 				cursor: pointer;
+
+				&:hover {
+					opacity: 0.6;
+				}
 			}
 
 			.site-menu__item {
@@ -116,7 +137,7 @@
 
 				&:before {
 					height: 2px;
-					background: $white;
+					background: $black;
 					border-radius: 5px;
 					display: block;
 					content: '';

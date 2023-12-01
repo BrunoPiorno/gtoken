@@ -46,7 +46,7 @@
 			z-index: 5;
 			top: 27px;
 			left: 30px;
-			width: 150px;
+			width: 70px;
 		}
 	}
 
@@ -101,7 +101,7 @@
 
 			@include responsive('tablet-h') {
 				top: 27px;
-				width: 150px;
+				width: 90px;
 			}
 
 			svg {
@@ -134,6 +134,14 @@
 	}
 }
 
+.menuopen {
+	.header .site-logo {
+		svg g path {
+			fill: $black;
+		}
+	}
+}
+
 .responsive__btn {
 	@include responsive('tablet-h') {
 		position: absolute;
@@ -148,7 +156,7 @@
 			display: block;
 			height: 4PX;
 			border-radius: 5PX;
-			background: $primary-color;
+			background: $white;
 			margin-bottom: 5px;
 			@include tre(.5s);
 
@@ -159,7 +167,7 @@
 
 		.menuopen & {
 			span {
-				background: $secondary-color !important;
+				background: $black !important;
 			}
 
 			span:nth-child(1) {

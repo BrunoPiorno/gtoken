@@ -46,9 +46,9 @@ $text = ( !empty($text) ) ? $text : '';
 
                 <div class="content__description">
                     <?php if (!empty($text)) {?>
-                        <p class="text">			
+                        <div class="text">			
                             <?php echo wp_kses_post( $text );?>
-                        </p>
+                        </div>
 			        <?php } ?>
                 </div> 
 

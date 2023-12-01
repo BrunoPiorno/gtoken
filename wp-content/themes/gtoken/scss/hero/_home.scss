@@ -51,6 +51,14 @@
                 @if editor() {
                     font-size: 230px;
                 }
+
+                @include responsive('desktop-l') {
+                    font-size: 190px;
+                }
+
+                @include responsive('tablet-h') {
+                    font-size: 120px;
+                }
             }
 
 

@@ -9,6 +9,14 @@
         justify-content: center;
         gap: 90px;
 
+        @include responsive('desktop-l') {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include responsive('tablet-v') {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
         .number {
             font-size: rv(60px, 281px);
             font-weight: 500;
@@ -16,6 +24,10 @@
             color: $light-black;
             font-family: $druk;
             max-height: 240px;
+
+            @include responsive('tablet-v') {
+                max-height: 140px;
+            }
 
         }
 
@@ -37,6 +49,10 @@
         gap: 40px;
         //@include fade(0, 100px, true, 0);
         min-height: 505px;
+
+        @include responsive('tablet-v') {
+            min-height: auto;
+        }
 
         &:nth-child(1) {
             @include fade(0, 100px, true, 0);
@@ -76,11 +92,13 @@
         font-weight: 400;
         color: $white;
         @include fade(-100px, 0, true, 4);
+        font-family: $calluna;
 
         a {
-            color: $white;
+            color: $black;
             text-decoration: none;
             text-transform: capitalize;
+            font-family: $calluna;
         }
 
         &::before {

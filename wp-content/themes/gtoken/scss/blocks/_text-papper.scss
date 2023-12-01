@@ -1,6 +1,6 @@
 .text-papper {
-    padding-top: rv(60px, 200px);
-    padding-bottom: rv(60px, 110px);
+    padding-top: rv(60px, 100px);
+    padding-bottom: rv(60px, 100px);
 
 
     .content {
@@ -27,12 +27,34 @@
 
                 @include fade(0, 100px, true, 0);
 
+                @include responsive('desktop-l') {
+                    font-size: 90px;
+                }
+
+                @include responsive('tablet-v') {
+                    font-size: 60px;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+
+
                 span {
                     color: $pink-color;
                     font-style: italic;
                     font-size: rv(50px, 120px);
                     font-weight: 300;
                     line-height: 1;
+
+                    @include responsive('desktop-l') {
+                        font-size: 100px;
+                    }
+
+                    @include responsive('tablet-v') {
+                        font-size: 70px;
+                    }
                 }
             }
         }
@@ -53,15 +75,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 34px;
+            //margin-top: 34px;
             @include fade(-100px, 0, true, 2);
 
             &__text {
                 font-size: rv(26px, 60px);
+                font-family: $calluna;
                 color: $black;
                 font-weight: 400;
                 line-height: 1;
                 font-style: italic;
+                margin-right: 10px;
             }
 
             a {
@@ -72,6 +96,7 @@
                 font-weight: 400;
                 line-height: 1;
                 font-style: italic;
+                font-family: $calluna;
             }
 
             &::before {
