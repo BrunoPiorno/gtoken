@@ -97,6 +97,9 @@
 			</div>
 		<?php endforeach; ?>
 
+		<div class="poylang">
 		<?php pll_the_languages( array( 'show_flags' => 1,'show_names' => 0 ) );  ?>
+
+		</div>
 	</div>
 <?php endif; ?>
