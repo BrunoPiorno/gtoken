@@ -829,7 +829,7 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .hero--home .hero__text .title {
 				color: #ffffff;
 				font-family: "Druk-Medium";
-				font-size: clamp(60px, -181.2px + 0.402 * 100vw, 281px);
+				font-size: clamp(60px, -93px + 0.255 * 100vw, 200px);
 				line-height: 1;
 				font-weight: 500;
 				opacity: var(--fade-opacity, 0);
@@ -1924,7 +1924,7 @@ Blocks Styles
 				}
 }
 .editor-styles-wrapper .acf-block-preview .text-papper .content__text .title {
-				font-size: clamp(50px, -24.4px + 0.124 * 100vw, 118px);
+				font-size: clamp(50px, 17px + 0.055 * 100vw, 80px);
 				font-family: "Calluna";
 				color: #231F20;
 				line-height: 1;
@@ -1935,11 +1935,6 @@ Blocks Styles
 				        transform: var(--fade-transform, translateX(0) translateY(100px));
 				-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 				transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-@media only screen and (max-width: 1500px) {
-				.editor-styles-wrapper .acf-block-preview .text-papper .content__text .title {
-								font-size: 90px;
-				}
 }
 @media only screen and (max-width: 900px) {
 				.editor-styles-wrapper .acf-block-preview .text-papper .content__text .title {
@@ -1957,14 +1952,9 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .text-papper .content__text .title span {
 				color: #FB3BA5;
 				font-style: italic;
-				font-size: clamp(50px, -26.2px + 0.127 * 100vw, 120px);
+				font-size: clamp(50px, 6.2px + 0.073 * 100vw, 90px);
 				font-weight: 300;
 				line-height: 1;
-}
-@media only screen and (max-width: 1500px) {
-				.editor-styles-wrapper .acf-block-preview .text-papper .content__text .title span {
-								font-size: 100px;
-				}
 }
 @media only screen and (max-width: 900px) {
 				.editor-styles-wrapper .acf-block-preview .text-papper .content__text .title span {
@@ -1988,7 +1978,7 @@ Blocks Styles
 				}
 }
 .editor-styles-wrapper .acf-block-preview .text-papper .content__description p {
-				font-size: clamp(18px, 9px + 0.015 * 100vw, 26px);
+				font-size: clamp(18px, 11.4px + 0.011 * 100vw, 24px);
 				color: #000;
 				font-weight: 400;
 				line-height: 1.5;
@@ -2067,7 +2057,7 @@ Blocks Styles
 				        transition-delay: 0.4s;
 }
 .editor-styles-wrapper .acf-block-preview .text-papper .content__link__text {
-				font-size: clamp(26px, -11.2px + 0.062 * 100vw, 60px);
+				font-size: clamp(26px, 11px + 0.025 * 100vw, 40px);
 				font-family: "Calluna";
 				color: #000;
 				font-weight: 400;
@@ -2076,7 +2066,7 @@ Blocks Styles
 				margin-right: 10px;
 }
 .editor-styles-wrapper .acf-block-preview .text-papper .content__link a {
-				font-size: clamp(26px, -11.2px + 0.062 * 100vw, 60px);
+				font-size: clamp(26px, 11px + 0.025 * 100vw, 40px);
 				text-decoration: none;
 				color: #3ACBED;
 				text-transform: capitalize;
