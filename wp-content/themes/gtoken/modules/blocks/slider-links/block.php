@@ -22,7 +22,7 @@
  do_action( 'palermo_pre_render_block', $block );
 ?>
 <section class="wrapper wrapper--white">
-    <section class="slider-links">
+    <section class="slider-links" data-waypoint=".5">
     <div class="anchor" id="noticias"></div>
         <div class="container">
             <?php if( have_rows('repeater_field') ): ?>

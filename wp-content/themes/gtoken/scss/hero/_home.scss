@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: flex-start;
     aspect-ratio: 16/9;
+    @include fade(0, 0, true, 0);
 
     @include responsive('mobile-h') {
         aspect-ratio: 1;

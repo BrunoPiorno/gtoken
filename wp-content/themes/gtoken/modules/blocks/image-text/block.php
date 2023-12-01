@@ -24,13 +24,17 @@
  $text = get_field('text');
 ?>
 
-<section class="image-text">
+<section class="image-text" data-waypoint=".5">
     <div class="container">
         <div class="image-text__cont">
             <?php if($image = get_field('image')): ?>
                 <div class="image-text__image">
                     <div class="image-text__image__logo"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/cria.png" alt="Google Play"></div>
-                    <?php get_template_part('modules/components/image', null, ['image' => $image]); ?>
+                    <div class="image-text__image__mobile">
+                    <!--   <div class="image-background"> -->
+                            <?php get_template_part('modules/components/image', null, ['image' => $image]); ?>
+                    <!--  </div> -->
+                    </div>
                 </div>
             <?php endif; ?> 
             <div class="image-text__content">

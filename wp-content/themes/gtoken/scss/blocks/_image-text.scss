@@ -3,7 +3,7 @@
     padding-bottom: rv(60px, 110px);
 
     @include responsive('desktop-l') {
-        //background-color: $light-blue-color;
+        background-color: $light-blue-color;
     }
 
     &::after {
@@ -22,7 +22,7 @@
         align-items: center;
 
         @include responsive('desktop-l') {
-            // flex-direction: column;
+            flex-direction: column;
         }
     }
 
@@ -44,6 +44,7 @@
             height: 750px;
             object-fit: cover;
             margin-top: 50px;
+
         }
 
         &__logo {
@@ -51,11 +52,21 @@
             top: 0;
             left: 0;
             max-width: 220px;
+            z-index: 1;
+            @include fade(-100px, 0, true, 4);
+
+            @include responsive('mobile-h') {
+                max-width: 120px;
+            }
 
             img {
                 width: auto;
                 height: auto;
             }
+        }
+
+        &__mobile {
+            @include fade(0, 100px, true, 0);
         }
     }
 
@@ -63,6 +74,7 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        @include fade(0, 100px, true, 3);
 
         a,
         img {
@@ -78,9 +90,10 @@
         font-weight: 400;
         font-family: $secondary-font;
         color: $white;
-        margin-top: 70px;
+        margin-top: 80px;
         line-height: 1;
         max-width: 480px;
+        @include fade(0, 100px, true, 1);
 
         @include responsive('desktop-xl') {
             font-size: 55px;
@@ -93,5 +106,6 @@
         font-style: italic;
         line-height: 1.4;
         color: $light-black;
+        @include fade(0, 100px, true, 2);
     }
 }

@@ -1,12 +1,16 @@
 .slider-links {
     padding-top: rv(84px, 84px);
-    padding-bottom: rv(84px, 181px);
+    padding-bottom: rv(84px, 84px);
     position: relative;
     overflow: hidden;
 
     .anchor {
         position: absolute;
         top: -84px;
+    }
+
+    .container {
+        @include fade(100px, 0, true, 0);
     }
 
     .swiper-cont {

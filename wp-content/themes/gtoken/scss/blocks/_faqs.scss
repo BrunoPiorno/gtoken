@@ -3,6 +3,10 @@
     padding-bottom: rv(60px, 125px);
     position: relative;
 
+    .accordion__cont {
+        @include fade(0, 100px, true, 0);
+    }
+
     .accordion__question {
         color: $pink-color;
         font-size: rv(22px, 30px);
