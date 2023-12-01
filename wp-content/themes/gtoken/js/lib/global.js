@@ -40,7 +40,7 @@ jQuery(document).ready(function ($) {
 
 	if (document.querySelector('.slider-partners')) {
 		const opciones = {
-			loop: false,
+			loop: true,
 			autoplay: {
 				delay: 4000
 			},
@@ -68,6 +68,7 @@ jQuery(document).ready(function ($) {
 		}
 		new Swiper('.slider-partners', opciones);
 	}
+
 
 	jQuery('.site-menu__first-level').on('click', () => {
 		jQuery('body').removeClass('menuopen');
