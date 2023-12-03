@@ -4,6 +4,12 @@
 
     @include responsive('desktop-l') {
         background-color: $light-blue-color;
+        margin-bottom: 200px;
+    }
+
+    @include responsive('tablet-h') {
+        background-color: $light-blue-color;
+        margin-bottom: 100px;
     }
 
     &::after {
@@ -34,6 +40,10 @@
         max-width: 100%;
         //justify-content: flex-start;
         //align-self: flex-start;
+
+        @include responsive('desktop-l') {
+            width: 100%;
+        }
     }
 
     &__image {
@@ -44,6 +54,10 @@
             height: 750px;
             object-fit: cover;
             margin-top: 50px;
+
+            @include responsive('tablet-h') {
+                height: 76vw;
+            }
 
         }
 
@@ -81,11 +95,16 @@
             width: 240px;
             height: 78px;
             object-fit: cover;
+
+            @include responsive('mobile-h') {
+                width: 150px;
+                height: auto;
+            }
         }
     }
 
     &__title {
-        font-size: rv(36px, 75px);
+        font-size: rv(45px, 75px);
         //font-weight: 700;
         font-weight: 400;
         font-family: $secondary-font;
@@ -95,8 +114,17 @@
         max-width: 480px;
         @include fade(0, 100px, true, 1);
 
+        @include responsive('desktop-l') {
+            max-width: 100%;
+            margin-top: 0;
+        }
+
         @include responsive('desktop-xl') {
             font-size: 55px;
+        }
+
+        @include responsive('mobile-h') {
+            font-size: 45px;
         }
     }
 

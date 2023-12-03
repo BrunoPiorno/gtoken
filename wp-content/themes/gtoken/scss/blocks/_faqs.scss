@@ -1,6 +1,6 @@
 .accordion--faqs {
-    padding-top: rv(60px, 125px);
-    padding-bottom: rv(60px, 125px);
+    padding-top: rv(20px, 125px);
+    padding-bottom: rv(20px, 125px);
     position: relative;
 
     .accordion__cont {
@@ -9,7 +9,7 @@
 
     .accordion__question {
         color: $pink-color;
-        font-size: rv(22px, 30px);
+        font-size: rv(19px, 30px);
         font-weight: 400;
         line-height: 1;
         font-style: italic;
@@ -30,6 +30,7 @@
             display: inline-block;
             width: 29px;
             height: 29px;
+            aspect-ratio: 1;
             transition: all 0.3s ease;
 
             @include responsive('mobile-h') {
@@ -87,5 +88,10 @@
         left: 0;
         width: 68%;
         height: 14px;
+
+        @include responsive('mobile-h') {
+            width: 100%;
+            bottom: 99%;
+        }
     }
 }

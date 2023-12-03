@@ -31,9 +31,10 @@
                 max-height: 180px;
             }
 
-            /*  @include responsive('tablet-v') {
-                max-height: inherit;
-            } */
+            @include responsive('mobile-h') {
+                font-size: 140px;
+                max-height: 128px;
+            }
 
         }
 
@@ -48,6 +49,11 @@
 
             @include responsive('desktop-l') {
                 font-size: 60px;
+            }
+
+            @include responsive('desktop-l') {
+                font-size: 45px;
+                max-width: 100%;
             }
 
 

@@ -83,6 +83,10 @@
 					margin-right: 0;
 				}
 
+				@include responsive('desktop-m') {
+					font-size: 18px;
+				}
+
 				a {
 					color: $white;
 					text-decoration: none;

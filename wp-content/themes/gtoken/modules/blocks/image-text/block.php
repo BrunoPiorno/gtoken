@@ -31,9 +31,9 @@
                 <div class="image-text__image">
                     <div class="image-text__image__logo"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/cria.png" alt="Google Play"></div>
                     <div class="image-text__image__mobile">
-                    <!--   <div class="image-background"> -->
+                       <!--  <div class="image-background">  -->
                             <?php get_template_part('modules/components/image', null, ['image' => $image]); ?>
-                    <!--  </div> -->
+                       <!--  </div> -->
                     </div>
                 </div>
             <?php endif; ?> 
