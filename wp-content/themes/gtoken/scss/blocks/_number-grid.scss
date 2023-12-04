@@ -10,12 +10,15 @@
         gap: 90px;
 
         @include responsive('desktop-l') {
+            gap: 40px;
+        }
+
+        @include responsive('desktop-m') {
             grid-template-columns: repeat(2, 1fr);
         }
 
         @include responsive('tablet-v') {
             grid-template-columns: repeat(1, 1fr);
-            gap: 40px;
         }
 
         .number {
@@ -27,13 +30,8 @@
             max-height: 180px;
 
             @include responsive('desktop-l') {
-                font-size: 200px;
-                max-height: 180px;
-            }
-
-            @include responsive('mobile-h') {
-                font-size: 140px;
-                max-height: 128px;
+                font-size: 120px;
+                max-height: 105px;
             }
 
         }
@@ -48,7 +46,7 @@
             text-transform: uppercase;
 
             @include responsive('desktop-l') {
-                font-size: 60px;
+                font-size: 55px;
             }
 
             @include responsive('desktop-l') {
@@ -68,11 +66,15 @@
         //@include fade(0, 100px, true, 0);
         min-height: 505px;
 
+        @include responsive('desktop-l') {
+            min-height: 305px;
+        }
+
         @include responsive('mobile-h') {
             gap: 20px;
         }
 
-        @include responsive('desktop-l') {
+        @include responsive('desktop-m') {
             min-height: auto;
         }
 
@@ -104,6 +106,10 @@
             font-size: rv(18px, 24px);
             font-style: italic;
             line-height: 1.4;
+
+            @include responsive('desktop-l') {
+                font-size: 18px;
+            }
         }
     }
 

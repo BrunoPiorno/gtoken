@@ -814,7 +814,7 @@ strong * {
 }
 @media only screen and (max-width: 1500px) {
 				.hero--home .hero__text .title {
-								font-size: 190px;
+								font-size: 160px;
 				}
 }
 @media only screen and (max-width: 1050px) {
@@ -1980,6 +1980,11 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				    -ms-flex-align: start;
 				        align-items: flex-start;
 }
+@media only screen and (max-width: 1500px) {
+				.text-papper .content {
+								gap: 40px;
+				}
+}
 @media only screen and (max-width: 1050px) {
 				.text-papper .content {
 								-webkit-box-orient: vertical;
@@ -2009,10 +2014,12 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 				transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1500px) {
 				.text-papper .content__text .title {
 								font-size: 60px;
 				}
+}
+@media only screen and (max-width: 900px) {
 				.text-papper .content__text .title br {
 								display: none;
 				}
@@ -2029,7 +2036,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				font-weight: 300;
 				line-height: 1;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1500px) {
 				.text-papper .content__text .title span {
 								font-size: 70px;
 				}
@@ -2483,15 +2490,19 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 @media only screen and (max-width: 1500px) {
 				.number_grid__cont {
+								gap: 40px;
+				}
+}
+@media only screen and (max-width: 1260px) {
+				.number_grid__cont {
 								-ms-grid-columns: (1fr)[2];
 								grid-template-columns: repeat(2, 1fr);
 				}
 }
 @media only screen and (max-width: 900px) {
 				.number_grid__cont {
-								-ms-grid-columns: 1fr;
+								-ms-grid-columns: (1fr)[1];
 								grid-template-columns: repeat(1, 1fr);
-								gap: 40px;
 				}
 }
 .number_grid__cont .number {
@@ -2504,14 +2515,8 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 @media only screen and (max-width: 1500px) {
 				.number_grid__cont .number {
-								font-size: 200px;
-								max-height: 180px;
-				}
-}
-@media only screen and (max-width: 768px) {
-				.number_grid__cont .number {
-								font-size: 140px;
-								max-height: 128px;
+								font-size: 120px;
+								max-height: 105px;
 				}
 }
 .number_grid__cont .number_text {
@@ -2525,7 +2530,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 @media only screen and (max-width: 1500px) {
 				.number_grid__cont .number_text {
-								font-size: 60px;
+								font-size: 55px;
 				}
 }
 @media only screen and (max-width: 1500px) {
@@ -2546,12 +2551,17 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				gap: 40px;
 				min-height: 505px;
 }
+@media only screen and (max-width: 1500px) {
+				.number_grid__item {
+								min-height: 305px;
+				}
+}
 @media only screen and (max-width: 768px) {
 				.number_grid__item {
 								gap: 20px;
 				}
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1260px) {
 				.number_grid__item {
 								min-height: auto;
 				}
@@ -2607,6 +2617,11 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				font-size: clamp(18px, 11.4px + 0.011 * 100vw, 24px);
 				font-style: italic;
 				line-height: 1.4;
+}
+@media only screen and (max-width: 1500px) {
+				.number_grid__item .number_content {
+								font-size: 18px;
+				}
 }
 .number_grid__link {
 				padding-top: 40px;
@@ -2791,31 +2806,6 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 								gap: 0;
 								margin-bottom: 0;
 				}
-}
-.slider-links .swiper-cont .swiper.slider-partners .swiper-pagination {
-				width: 100%;
-				margin: 0 auto;
-				height: 50px;
-				display: inline;
-				display: none;
-}
-@media only screen and (max-width: 768px) {
-				.slider-links .swiper-cont .swiper.slider-partners .swiper-pagination {
-								display: none;
-				}
-}
-.slider-links .swiper-cont .swiper.slider-partners .swiper-pagination .swiper-pagination-bullet {
-				width: 10px;
-				height: 10px;
-				margin: 0 15px;
-				display: inline-block;
-				cursor: pointer;
-				vertical-align: middle;
-				background-color: #DFEDF3;
-				border-radius: 10px;
-}
-.slider-links .swiper-cont .swiper.slider-partners .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-				background-color: #54A8C7;
 }
 
 .error-404 {

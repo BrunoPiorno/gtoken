@@ -140,32 +140,7 @@
                 }
             }
 
-            .swiper-pagination {
-                width: 100%;
-                margin: 0 auto;
-                height: 50px;
-                display: inline;
-                display: none;
 
-                @include responsive('mobile-h') {
-                    display: none;
-                }
-
-                .swiper-pagination-bullet {
-                    width: 10px;
-                    height: 10px;
-                    margin: 0 15px;
-                    display: inline-block;
-                    cursor: pointer;
-                    vertical-align: middle;
-                    background-color: $secondary-blue;
-                    border-radius: 10px;
-
-                    &.swiper-pagination-bullet-active {
-                        background-color: $secondary-color;
-                    }
-                }
-            }
         }
     }
 }
