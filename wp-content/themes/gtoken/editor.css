@@ -126,6 +126,7 @@ Blocks Styles
 @font-face {
 				font-family: "Druk-Medium";
 				src: url("./fonts/Druk-Medium.woff2") format("woff2"), url("./fonts/Druk-Medium.woff") format("truetype");
+				font-display: swap;
 }
 @font-face {
 				font-family: "Calluna";
@@ -135,6 +136,7 @@ Blocks Styles
 				src: url("@{base-url}/@{folder}/@{name}.eot?#iefix") format("embedded-opentype"), url("@{base-url}/@{folder}/@{name}.woff") format("woff"), url("@{base-url}/@{folder}/@{name}.ttf") format("truetype"), url("@{base-url}/@{folder}/@{name}.svg#") format("svg");
 				font-weight: normal;
 				font-style: normal;
+				font-display: swap;
 }
 .editor-styles-wrapper .acf-block-preview html {
 				-webkit-box-sizing: border-box;
@@ -2114,8 +2116,8 @@ Blocks Styles
 				display: inline-block;
 				margin-right: 15px;
 				display: inline-block;
-				width: 29px;
-				height: 29px;
+				width: 25px;
+				height: 25px;
 }
 @media only screen and (max-width: 768px) {
 				.editor-styles-wrapper .acf-block-preview .text-papper .content__link::before {
@@ -2138,7 +2140,7 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .accordion--faqs .accordion__question {
 				color: #FB3BA5;
-				font-size: clamp(19px, 7px + 0.02 * 100vw, 30px);
+				font-size: clamp(18px, 4.8px + 0.022 * 100vw, 30px);
 				font-weight: 400;
 				line-height: 1;
 				font-style: italic;
@@ -2165,8 +2167,8 @@ Blocks Styles
 				content: "";
 				background: url(images/icons/arrow-select-pink.png) no-repeat center/contain;
 				display: inline-block;
-				width: 29px;
-				height: 29px;
+				width: 25px;
+				height: 25px;
 				aspect-ratio: 1;
 				-webkit-transition: all 0.3s ease;
 				transition: all 0.3s ease;
@@ -2232,13 +2234,11 @@ Blocks Styles
 }
 @media only screen and (max-width: 1500px) {
 				.editor-styles-wrapper .acf-block-preview .image-text {
-								background-color: #3ACBED;
 								margin-bottom: 200px;
 				}
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .image-text {
-								background-color: #3ACBED;
 								margin-bottom: 100px;
 				}
 }
@@ -2250,6 +2250,14 @@ Blocks Styles
 				z-index: -1;
 				width: 100%;
 				height: 456px;
+}
+@media only screen and (max-width: 600px) {
+				.editor-styles-wrapper .acf-block-preview .image-text::after {
+								top: 150px;
+								z-index: -1;
+								width: 100%;
+								height: 150px;
+				}
 }
 .editor-styles-wrapper .acf-block-preview .image-text__cont {
 				display: -webkit-box;
@@ -2319,8 +2327,14 @@ Blocks Styles
 				}
 }
 .editor-styles-wrapper .acf-block-preview .image-text__image__logo img {
-				width: auto;
-				height: auto;
+				width: 220px;
+				height: 220x;
+}
+@media only screen and (max-width: 1500px) {
+				.editor-styles-wrapper .acf-block-preview .image-text__image__logo img {
+								width: auto;
+								height: auto;
+				}
 }
 .editor-styles-wrapper .acf-block-preview .image-text__image__mobile {
 				opacity: var(--fade-opacity, 0);
@@ -2384,6 +2398,7 @@ Blocks Styles
 @media only screen and (max-width: 1680px) {
 				.editor-styles-wrapper .acf-block-preview .image-text__title {
 								font-size: 55px;
+								color: #000;
 				}
 }
 @media only screen and (max-width: 768px) {
@@ -2578,8 +2593,8 @@ Blocks Styles
 				background: url(images/icons/arrow-select.png) no-repeat center/contain;
 				margin-right: 20px;
 				display: inline-block;
-				width: 29px;
-				height: 29px;
+				width: 25px;
+				height: 25px;
 }
 @media only screen and (max-width: 768px) {
 				.editor-styles-wrapper .acf-block-preview .number_grid__link::before {

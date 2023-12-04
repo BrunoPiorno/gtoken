@@ -9,7 +9,7 @@
 
     .accordion__question {
         color: $pink-color;
-        font-size: rv(19px, 30px);
+        font-size: rv(18px, 30px);
         font-weight: 400;
         line-height: 1;
         font-style: italic;
@@ -28,8 +28,8 @@
             content: '';
             background: url(images/icons/arrow-select-pink.png) no-repeat center/contain;
             display: inline-block;
-            width: 29px;
-            height: 29px;
+            width: 25px;
+            height: 25px;
             aspect-ratio: 1;
             transition: all 0.3s ease;
 

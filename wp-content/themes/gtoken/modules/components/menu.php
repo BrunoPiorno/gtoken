@@ -28,9 +28,9 @@ if ($hasmenu):
             </div>
         <?php endforeach; ?>
 
-        <div class="poylang">
+        <ul class="poylang">
             <?php pll_the_languages(array('show_flags' => 1, 'show_names' => 0)); ?>
-        </div>
+        </ul>
     </div>
 <?php endif; ?>
 
