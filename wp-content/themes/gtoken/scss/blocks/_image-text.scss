@@ -3,11 +3,11 @@
     padding-bottom: rv(60px, 110px);
 
     @include responsive('desktop-l') {
-        margin-bottom: 200px;
+        margin-bottom: 100px;
     }
 
     @include responsive('tablet-h') {
-        margin-bottom: 100px;
+        margin-bottom: 0;
     }
 
     &::after {

@@ -22,7 +22,7 @@
  do_action( 'palermo_pre_render_block', $block );
 ?>
 <section class="wrapper wrapper--light-black">
-    <section class="accordion accordion--faqs" id="faqs" data-waypoint=".5">
+    <section class="accordion accordion--faqs" id="faqs" data-waypoint=".25">
         <div class="container">
             <div class="accordion__cont">
                 <?php while (have_rows('faqs')): the_row();

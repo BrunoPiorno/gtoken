@@ -32,7 +32,7 @@ $text = ( !empty($text) ) ? $text : '';
 ?>
 
 <!-- Text Image -->
-<section class="wrapper wrapper--white" data-waypoint=".5">
+<section class="wrapper wrapper--white" data-waypoint=".25">
     <section class="text-papper" id="proposito">
         <div class="container">
             <div class="content">

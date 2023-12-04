@@ -80,7 +80,7 @@
 
     &::before {
         content: '';
-        background: url(images/icons/barra.svg) no-repeat center/contain;
+        background: url(images/icons/barra.svg) no-repeat bottom left/contain;
         display: inline-block;
         position: absolute;
         top: auto;
@@ -90,8 +90,8 @@
         height: 14px;
 
         @include responsive('mobile-h') {
-            width: 100%;
-            bottom: 99%;
+            width: 85%;
+            bottom: 100%;
         }
     }
 }
