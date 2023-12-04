@@ -2371,7 +2371,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 .image-text__image__logo img {
 				width: 220px;
-				height: 220x;
+				height: 220px;
 }
 @media only screen and (max-width: 1500px) {
 				.image-text__image__logo img {
