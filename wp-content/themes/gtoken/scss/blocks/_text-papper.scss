@@ -102,7 +102,7 @@
             @include fade(-100px, 0, true, 2);
 
             &__text {
-                font-size: rv(26px, 40px);
+                font-size: rv(26px, 34px);
                 font-family: $calluna;
                 color: $black;
                 font-weight: 400;
@@ -112,7 +112,7 @@
             }
 
             a {
-                font-size: rv(26px, 40px);
+                font-size: rv(26px, 34px);
                 text-decoration: none;
                 color: $light-blue-color;
                 text-transform: capitalize;

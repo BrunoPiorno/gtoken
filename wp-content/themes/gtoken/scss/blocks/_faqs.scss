@@ -9,7 +9,7 @@
 
     .accordion__question {
         color: $pink-color;
-        font-size: rv(18px, 30px);
+        font-size: rv(18px, 24px);
         font-weight: 400;
         line-height: 1;
         font-style: italic;
@@ -67,7 +67,7 @@
     .accordion__answer {
         font-size: rv(18px, 24px);
         font-weight: 400;
-        line-height: 1.4;
+        line-height: 2;
         color: $white;
         padding: 0 30px 20px 64px;
         font-style: italic;

@@ -802,15 +802,16 @@ strong * {
 .hero--home .hero__text .title {
 				color: #ffffff;
 				font-family: "Druk-Medium";
-				font-size: clamp(60px, -93px + 0.255 * 100vw, 200px);
+				font-size: clamp(60px, -256.2px + 0.527 * 100vw, 350px);
 				line-height: 1;
 				font-weight: 500;
+				width: 900px;
+				max-width: 100%;
 				opacity: var(--fade-opacity, 0);
 				-webkit-transform: var(--fade-transform, translateX(-100px) translateY(0));
 				        transform: var(--fade-transform, translateX(-100px) translateY(0));
 				-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 				transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-				letter-spacing: 20px;
 }
 @media only screen and (max-width: 1500px) {
 				.hero--home .hero__text .title {
@@ -2137,7 +2138,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				        transition-delay: 0.4s;
 }
 .text-papper .content__link__text {
-				font-size: clamp(26px, 11px + 0.025 * 100vw, 40px);
+				font-size: clamp(26px, 17px + 0.015 * 100vw, 34px);
 				font-family: "Calluna";
 				color: #000;
 				font-weight: 400;
@@ -2146,7 +2147,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				margin-right: 10px;
 }
 .text-papper .content__link a {
-				font-size: clamp(26px, 11px + 0.025 * 100vw, 40px);
+				font-size: clamp(26px, 17px + 0.015 * 100vw, 34px);
 				text-decoration: none;
 				color: #3ACBED;
 				text-transform: capitalize;
@@ -2189,7 +2190,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 .accordion--faqs .accordion__question {
 				color: #FB3BA5;
-				font-size: clamp(18px, 4.8px + 0.022 * 100vw, 30px);
+				font-size: clamp(18px, 11.4px + 0.011 * 100vw, 24px);
 				font-weight: 400;
 				line-height: 1;
 				font-style: italic;
@@ -2249,7 +2250,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 .accordion--faqs .accordion__answer {
 				font-size: clamp(18px, 11.4px + 0.011 * 100vw, 24px);
 				font-weight: 400;
-				line-height: 1.4;
+				line-height: 2;
 				color: #ffffff;
 				padding: 0 30px 20px 64px;
 				font-style: italic;
@@ -2625,7 +2626,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 .number_grid__link {
 				padding-top: 40px;
-				font-size: clamp(24px, 6.6px + 0.029 * 100vw, 40px);
+				font-size: clamp(24px, 13.2px + 0.018 * 100vw, 34px);
 				font-style: italic;
 				font-weight: 400;
 				color: #ffffff;
