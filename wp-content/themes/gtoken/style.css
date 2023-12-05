@@ -277,6 +277,7 @@ h6,
 
 a {
 				color: #54A8C7;
+				cursor: pointer;
 				-webkit-transition: all 0.3s ease;
 				transition: all 0.3s ease;
 }
@@ -473,6 +474,12 @@ strong * {
 .scrolled .header .site-menu__first-level {
 				color: #34375A;
 }
+.scrolled .header .site-menu .poylang a span {
+				color: #000;
+}
+.scrolled .header .site-menu .poylang a span:hover {
+				color: #54A8C7;
+}
 .header .site-menu__item {
 				position: relative;
 				padding-bottom: 5px;
@@ -644,6 +651,17 @@ strong * {
 				    -ms-flex-align: center;
 				        align-items: center;
 				gap: 20px;
+}
+.header .site-menu .poylang a {
+				-webkit-text-decoration: auto;
+				        text-decoration: auto;
+}
+.header .site-menu .poylang a span {
+				color: #ffffff;
+}
+.header .site-menu .poylang a span:hover {
+				opacity: 0.8;
+				color: #FB3BA5;
 }
 
 .scrolled .header .site-menu .site-menu__item:hover .site-menu__first-level {
@@ -2250,6 +2268,11 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				padding: 0 30px 20px 64px;
 				font-style: italic;
 				display: none;
+}
+@media only screen and (max-width: 1500px) {
+				.accordion--faqs .accordion__answer {
+								font-size: 18px;
+				}
 }
 @media only screen and (max-width: 768px) {
 				.accordion--faqs .accordion__answer {

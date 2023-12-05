@@ -328,6 +328,7 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview a {
 				color: #54A8C7;
+				cursor: pointer;
 				-webkit-transition: all 0.3s ease;
 				transition: all 0.3s ease;
 }
@@ -516,6 +517,12 @@ Blocks Styles
 .scrolled .editor-styles-wrapper .acf-block-preview .header .site-menu__first-level {
 				color: #34375A;
 }
+.scrolled .editor-styles-wrapper .acf-block-preview .header .site-menu .poylang a span {
+				color: #000;
+}
+.scrolled .editor-styles-wrapper .acf-block-preview .header .site-menu .poylang a span:hover {
+				color: #54A8C7;
+}
 .editor-styles-wrapper .acf-block-preview .header .site-menu__item {
 				position: relative;
 				padding-bottom: 5px;
@@ -687,6 +694,17 @@ Blocks Styles
 				    -ms-flex-align: center;
 				        align-items: center;
 				gap: 20px;
+}
+.editor-styles-wrapper .acf-block-preview .header .site-menu .poylang a {
+				-webkit-text-decoration: auto;
+				        text-decoration: auto;
+}
+.editor-styles-wrapper .acf-block-preview .header .site-menu .poylang a span {
+				color: #ffffff;
+}
+.editor-styles-wrapper .acf-block-preview .header .site-menu .poylang a span:hover {
+				opacity: 0.8;
+				color: #FB3BA5;
 }
 .editor-styles-wrapper .acf-block-preview .scrolled .header .site-menu .site-menu__item:hover .site-menu__first-level {
 				color: #54A8C7;
@@ -2208,6 +2226,11 @@ Blocks Styles
 				padding: 0 30px 20px 64px;
 				font-style: italic;
 				display: none;
+}
+@media only screen and (max-width: 1500px) {
+				.editor-styles-wrapper .acf-block-preview .accordion--faqs .accordion__answer {
+								font-size: 18px;
+				}
 }
 @media only screen and (max-width: 768px) {
 				.editor-styles-wrapper .acf-block-preview .accordion--faqs .accordion__answer {

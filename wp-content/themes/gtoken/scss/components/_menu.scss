@@ -127,6 +127,18 @@
 			&__first-level {
 				color: $primary-color;
 			}
+
+			.poylang {
+				a {
+					span {
+						color: $black;
+
+						&:hover {
+							color: $secondary-color;
+						}
+					}
+				}
+			}
 		}
 
 		&__item {
@@ -306,6 +318,19 @@
 			display: flex;
 			align-items: center;
 			gap: 20px;
+
+			a {
+				text-decoration: auto;
+
+				span {
+					color: $white;
+
+					&:hover {
+						opacity: 0.8;
+						color: $pink-color;
+					}
+				}
+			}
 		}
 	}
 }

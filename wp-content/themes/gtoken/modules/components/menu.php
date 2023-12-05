@@ -29,7 +29,7 @@ if ($hasmenu):
         <?php endforeach; ?>
 
         <ul class="poylang">
-            <?php pll_the_languages(array('show_flags' => 1, 'show_names' => 0)); ?>
+            <?php pll_the_languages(array('show_flags' => 1, 'show_names' => 1)); ?>
         </ul>
     </div>
 <?php endif; ?>
