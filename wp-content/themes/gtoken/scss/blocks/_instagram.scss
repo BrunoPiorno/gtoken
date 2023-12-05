@@ -1,0 +1,39 @@
+.instagram {
+    padding-top: rv(60px, 100px);
+    padding-bottom: rv(60px, 100px);
+
+    .content {
+        .title {
+            font-size: rv(45px, 75px);
+            //font-weight: 700;
+            font-weight: 400;
+            font-family: $secondary-font;
+            color: $white;
+            line-height: 1;
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 40px;
+            @include fade(0, 100px, true, 0;
+
+                @include responsive('desktop-l') {
+                    max-width: 100%;
+                    margin-top: 0;
+                }
+
+                @include responsive('desktop-xl') {
+                    font-size: 55px;
+                }
+
+                @include responsive('mobile-h') {
+                    font-size: 45px;
+                }
+            }
+
+            &__description {
+                margin: 0 auto;
+                width: 100%;
+                text-align: center;
+                @include fade(0, 100px, true, 1);
+            }
+        }
+    }
