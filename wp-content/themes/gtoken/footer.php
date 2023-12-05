@@ -22,12 +22,13 @@
 
 						echo '<div class="content__link"><a href="' . $pdf_url . '" target="_blank">' . esc_html($pdf_title) . '</a></div>';
 					} ?>
+								<?php get_template_part('modules/components/copyright',null, ['footer' => true] ); ?>
+
 				</div>
 				<div class="site-footer__logo-column__three">
 					<?php get_template_part('modules/components/socials',null, ['footer' => true] ); ?>
 				</div>
 			</div>
-			<?php get_template_part('modules/components/copyright',null, ['footer' => true] ); ?>
 		</div>
 
 	</footer><!-- #colophon -->
