@@ -72,7 +72,7 @@
 			.email,
 			.content__link {
 				margin-right: 30px;
-				font-size: 16px;
+				font-size: 13px;
 
 				@include responsive('desktop-l') {
 					margin-right: 15px;
@@ -82,10 +82,6 @@
 					margin-bottom: 20px;
 					margin-right: 0;
 				}
-
-				/* 	@include responsive('desktop-m') {
-					font-size: 16px;
-				} */
 
 				a {
 					color: $white;

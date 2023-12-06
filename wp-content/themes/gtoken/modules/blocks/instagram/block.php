@@ -29,9 +29,9 @@ $text = get_field('text');
 $text = ( !empty($text) ) ? $text : '';
 ?>
 
-<section class="wrapper wrapper--pink" data-waypoint=".25">
+<section class="wrapper wrapper--white" data-waypoint=".25">
     <section class="instagram" id="instagram">
-        <div class="container">
+        <!-- <div class="container"> -->
             <div class="content">
                 <div class="content__text">
                     <?php if (!empty($title)) {?>
@@ -49,6 +49,6 @@ $text = ( !empty($text) ) ? $text : '';
 			        <?php } ?>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
     </section>
 </section>

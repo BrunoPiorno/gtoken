@@ -1142,10 +1142,7 @@ strong * {
 .site-footer__logo-column__two .email,
 .site-footer__logo-column__two .content__link {
 				margin-right: 30px;
-				font-size: 16px;
-				/* 	@include responsive('desktop-m') {
-					font-size: 16px;
-				} */
+				font-size: 13px;
 }
 @media only screen and (max-width: 1500px) {
 				.site-footer__logo-column__two .copyright,
@@ -2229,6 +2226,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				.accordion--faqs .accordion__question {
 								padding: 30px 0;
 								gap: 20px;
+								line-height: 1.4;
 				}
 }
 .accordion--faqs .accordion__question::after {
@@ -2945,7 +2943,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				font-size: clamp(45px, 12px + 0.055 * 100vw, 75px);
 				font-weight: 400;
 				font-family: "Bebas Neue", sans-serif;
-				color: #ffffff;
+				color: #231F20;
 				line-height: 1;
 				max-width: 100%;
 				text-align: center;
