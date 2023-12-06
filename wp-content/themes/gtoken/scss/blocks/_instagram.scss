@@ -13,27 +13,27 @@
             max-width: 100%;
             text-align: center;
             margin-bottom: 40px;
-            @include fade(0, 100px, true, 0;
+            @include fade(0, 100px, true, 0);
 
-                @include responsive('desktop-l') {
-                    max-width: 100%;
-                    margin-top: 0;
-                }
-
-                @include responsive('desktop-xl') {
-                    font-size: 55px;
-                }
-
-                @include responsive('mobile-h') {
-                    font-size: 45px;
-                }
+            @include responsive('desktop-l') {
+                max-width: 100%;
+                margin-top: 0;
             }
 
-            &__description {
-                margin: 0 auto;
-                width: 100%;
-                text-align: center;
-                @include fade(0, 100px, true, 1);
+            @include responsive('desktop-xl') {
+                font-size: 55px;
+            }
+
+            @include responsive('mobile-h') {
+                font-size: 45px;
             }
         }
+
+        &__description {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            @include fade(0, 100px, true, 1);
+        }
     }
+}

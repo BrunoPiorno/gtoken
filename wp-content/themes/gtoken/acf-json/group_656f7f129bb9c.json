@@ -27,7 +27,7 @@
             "label": "Text",
             "name": "text",
             "aria-label": "",
-            "type": "textarea",
+            "type": "text",
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,

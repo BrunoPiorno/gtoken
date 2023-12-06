@@ -702,6 +702,11 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .header .site-menu .poylang a span {
 				color: #ffffff;
 }
+@media only screen and (max-width: 1050px) {
+				.editor-styles-wrapper .acf-block-preview .header .site-menu .poylang a span {
+								color: #000;
+				}
+}
 .editor-styles-wrapper .acf-block-preview .header .site-menu .poylang a span:hover {
 				opacity: 0.8;
 				color: #FB3BA5;
@@ -2897,14 +2902,12 @@ Blocks Styles
 				line-height: 1;
 				max-width: 100%;
 				text-align: center;
-				margin-bottom: 25px;
+				margin-bottom: 40px;
 				opacity: var(--fade-opacity, 0);
 				-webkit-transform: var(--fade-transform, translateX(0) translateY(100px));
 				        transform: var(--fade-transform, translateX(0) translateY(100px));
 				-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 				transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-				-webkit-transition-delay: 0.2s;
-				        transition-delay: 0.2s;
 }
 @media only screen and (max-width: 1500px) {
 				.editor-styles-wrapper .acf-block-preview .instagram .content .title {
