@@ -32,7 +32,7 @@ $media_type = get_field('video_o_imagen');  ?>
     <section class="hero hero--home">
         <?php if ($media_type && $video): ?>
             <div class="hero__video">
-                <video autoplay muted loop>
+                <video muted loop playsinline>
                     <source src="<?php echo esc_url($video['url']); ?>" type="<?php echo esc_attr($video['mime_type']); ?>">
                 </video>
             </div>
