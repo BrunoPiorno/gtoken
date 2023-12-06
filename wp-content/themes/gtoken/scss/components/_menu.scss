@@ -64,7 +64,7 @@
 
 			@include responsive('tablet-h') {
 				color: $primary-color !important;
-				font-size: 23px;
+				font-size: 18px;
 				font-weight: 600;
 			}
 
@@ -146,7 +146,7 @@
 			padding-bottom: 5px;
 
 			@include responsive('tablet-h') {
-				padding-bottom: 35px;
+				padding-bottom: 20px;
 
 				&:before {
 					height: 2px;

@@ -431,7 +431,7 @@ strong * {
 @media only screen and (max-width: 1050px) {
 				.header .site-menu__first-level {
 								color: #34375A !important;
-								font-size: 23px;
+								font-size: 18px;
 								font-weight: 600;
 				}
 }
@@ -486,7 +486,7 @@ strong * {
 }
 @media only screen and (max-width: 1050px) {
 				.header .site-menu__item {
-								padding-bottom: 35px;
+								padding-bottom: 20px;
 				}
 				.header .site-menu__item:before {
 								height: 2px;
@@ -848,8 +848,7 @@ strong * {
 }
 @media only screen and (max-width: 768px) {
 				.hero--home .hero__text .title {
-								font-size: 60px;
-								letter-spacing: 10px;
+								font-size: 90px;
 				}
 }
 .hero--home .hero__text p {

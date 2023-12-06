@@ -474,7 +474,7 @@ Blocks Styles
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .header .site-menu__first-level {
 								color: #34375A !important;
-								font-size: 23px;
+								font-size: 18px;
 								font-weight: 600;
 				}
 }
@@ -529,7 +529,7 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .header .site-menu__item {
-								padding-bottom: 35px;
+								padding-bottom: 20px;
 				}
 				.editor-styles-wrapper .acf-block-preview .header .site-menu__item:before {
 								height: 2px;
@@ -889,8 +889,7 @@ Blocks Styles
 }
 @media only screen and (max-width: 768px) {
 				.editor-styles-wrapper .acf-block-preview .hero--home .hero__text .title {
-								font-size: 60px;
-								letter-spacing: 10px;
+								font-size: 90px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .hero--home .hero__text p {
