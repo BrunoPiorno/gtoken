@@ -2152,7 +2152,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				        transition-delay: 0.4s;
 }
 .text-papper .content__link__text {
-				font-size: clamp(24px, 13.2px + 0.018 * 100vw, 34px);
+				font-size: clamp(22px, 8.8px + 0.022 * 100vw, 34px);
 				font-family: "Calluna";
 				color: #000;
 				font-weight: 400;
@@ -2161,7 +2161,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				margin-right: 10px;
 }
 .text-papper .content__link a {
-				font-size: clamp(24px, 13.2px + 0.018 * 100vw, 34px);
+				font-size: clamp(22px, 8.8px + 0.022 * 100vw, 34px);
 				text-decoration: none;
 				color: #3ACBED;
 				text-transform: capitalize;
@@ -2646,7 +2646,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 .number_grid__link {
 				padding-top: 40px;
-				font-size: clamp(24px, 13.2px + 0.018 * 100vw, 34px);
+				font-size: clamp(22px, 8.8px + 0.022 * 100vw, 34px);
 				font-style: italic;
 				font-weight: 400;
 				color: #ffffff;
