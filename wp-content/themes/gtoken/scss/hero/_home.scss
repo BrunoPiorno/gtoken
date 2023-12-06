@@ -47,6 +47,10 @@
                 max-width: 100%;
             }
 
+            @include responsive('mobile-v') {
+                padding-top: 30px;
+            }
+
             .title {
                 color: $white;
                 font-family: $druk;

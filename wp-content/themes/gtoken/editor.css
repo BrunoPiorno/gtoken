@@ -868,6 +868,11 @@ Blocks Styles
 								max-width: 100%;
 				}
 }
+@media only screen and (max-width: 600px) {
+				.editor-styles-wrapper .acf-block-preview .hero--home .hero__text {
+								padding-top: 30px;
+				}
+}
 .editor-styles-wrapper .acf-block-preview .hero--home .hero__text .title {
 				color: #ffffff;
 				font-family: "Druk-Medium";

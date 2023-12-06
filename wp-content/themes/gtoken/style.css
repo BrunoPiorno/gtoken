@@ -827,6 +827,11 @@ strong * {
 								max-width: 100%;
 				}
 }
+@media only screen and (max-width: 600px) {
+				.hero--home .hero__text {
+								padding-top: 30px;
+				}
+}
 .hero--home .hero__text .title {
 				color: #ffffff;
 				font-family: "Druk-Medium";
