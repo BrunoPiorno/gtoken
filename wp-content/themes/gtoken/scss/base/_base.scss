@@ -135,4 +135,8 @@ strong * {
   box-shadow: #333 0 0 10px;
   z-index: 1000;
   text-decoration: none;
+
+  @include responsive('mobile-h') {
+    right: 15px;
+  }
 }

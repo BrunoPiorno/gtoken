@@ -358,6 +358,11 @@ strong * {
 				z-index: 1000;
 				text-decoration: none;
 }
+@media only screen and (max-width: 768px) {
+				.btn-whatsapp {
+								right: 15px;
+				}
+}
 
 .error404 .header .site-menu__first-level {
 				color: #000;
@@ -2738,6 +2743,11 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				-webkit-box-align: center;
 				    -ms-flex-align: center;
 				        align-items: center;
+}
+@media only screen and (max-width: 768px) {
+				.slider-links .swiper-cont .slider-partners .swiper-slide {
+								display: block;
+				}
 }
 .slider-links .swiper-cont .swiper.slider-partners .swiper-button-prev,
 .slider-links .swiper-cont .swiper.slider-partners .swiper-button-next {
