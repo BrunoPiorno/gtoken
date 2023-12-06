@@ -2435,7 +2435,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 .image-text__buttons a,
 .image-text__buttons img {
-				width: 240px;
+				width: 260px;
 				height: 78px;
 				-o-object-fit: cover;
 				   object-fit: cover;

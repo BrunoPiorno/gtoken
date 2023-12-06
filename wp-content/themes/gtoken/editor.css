@@ -2392,7 +2392,7 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .image-text__buttons a,
 .editor-styles-wrapper .acf-block-preview .image-text__buttons img {
-				width: 240px;
+				width: 260px;
 				height: 78px;
 				-o-object-fit: cover;
 				   object-fit: cover;
