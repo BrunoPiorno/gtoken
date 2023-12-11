@@ -2951,7 +2951,6 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 
 .instagram {
 				padding-top: clamp(60px, 16.2px + 0.073 * 100vw, 100px);
-				padding-bottom: clamp(60px, 16.2px + 0.073 * 100vw, 100px);
 }
 .instagram .content .title {
 				font-size: clamp(45px, 12px + 0.055 * 100vw, 75px);
