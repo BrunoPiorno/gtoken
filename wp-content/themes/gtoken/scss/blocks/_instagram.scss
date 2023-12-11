@@ -36,4 +36,8 @@
             @include fade(0, 100px, true, 1);
         }
     }
+
+    #sb_instagram {
+        padding-bottom: 0 !important;
+    }
 }

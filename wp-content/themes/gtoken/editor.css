@@ -2948,6 +2948,9 @@ Blocks Styles
 				-webkit-transition-delay: 0.2s;
 				        transition-delay: 0.2s;
 }
+.editor-styles-wrapper .acf-block-preview .instagram #sb_instagram {
+				padding-bottom: 0 !important;
+}
 .editor-styles-wrapper .wp-block {
 				overflow: hidden;
 }

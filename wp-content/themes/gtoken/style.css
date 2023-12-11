@@ -2995,4 +2995,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 				-webkit-transition-delay: 0.2s;
 				        transition-delay: 0.2s;
 }
+.instagram #sb_instagram {
+				padding-bottom: 0 !important;
+}
 /*# sourceMappingURL=style.css.map */
