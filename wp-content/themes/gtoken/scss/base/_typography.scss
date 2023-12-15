@@ -1,3 +1,5 @@
+$fonts-folder: 'fonts/calluna';
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
 
 @font-face {
@@ -9,13 +11,9 @@
 
 @font-face {
     font-family: 'Calluna';
-    @folder: 'Calluna/regular';
-    @name: 'Calluna-Regular';
-    src: url("@{base-url}/@{folder}/@{name}.eot");
-    src: url("@{base-url}/@{folder}/@{name}.eot?#iefix") format('embedded-opentype'),
-    url("@{base-url}/@{folder}/@{name}.woff") format('woff'),
-    url("@{base-url}/@{folder}/@{name}.ttf") format('truetype'),
-    url("@{base-url}/@{folder}/@{name}.svg#") format('svg');
+    src: url('./fonts/calluna/Calluna-Regular.woff') format('woff'),
+        url('./fonts/calluna/Calluna-Regular.svg') format('svg'),
+        url('./fonts/calluna/Calluna-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
