@@ -376,6 +376,9 @@ strong * {
 				display: -ms-flexbox;
 				display: flex;
 				gap: 40px;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 				-webkit-transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 				transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 				transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -2283,7 +2286,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 								font-size: 18px;
 				}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1050px) {
 				.accordion--faqs .accordion__answer {
 								padding: 0 0 20px 0;
 				}
