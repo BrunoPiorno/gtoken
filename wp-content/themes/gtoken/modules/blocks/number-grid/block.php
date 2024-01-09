@@ -42,12 +42,17 @@
             </div>
 
 
-            <?php if ($video_youtube = get_field('video_youtube')) {
-            $url = esc_url($video_youtube['url']);
-            $target = esc_attr($video_youtube['target']);
-            $title = esc_html($video_youtube['title']);
-            
-            echo '<div class="number_grid__link">Mirá nuestro <a href="' . $url . '" target="' . $target . '">' . $title . '</a></div>';
+            <?php
+if ($video_youtube = get_field('video_youtube')) {
+    $url = esc_url($video_youtube['url']);
+    $target = esc_attr($video_youtube['target']);
+    $title = esc_html($video_youtube['title']);
+
+    // Verificar si existe el campo 'title'
+    $custom_title = get_field('title');
+    $display_title = $custom_title ? $custom_title : 'Mira nuestro';
+
+    echo '<div class="number_grid__link">' . $display_title . ' <a href="' . $url . '" target="' . $target . '">' . $title . '</a></div>';
         } ?>
 
         </div>
