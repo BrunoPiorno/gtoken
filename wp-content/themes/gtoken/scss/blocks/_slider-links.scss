@@ -32,7 +32,7 @@
                     width: 300px;
                     height: 120px;
                     object-fit: contain;
-                    float: left;
+                    //float: left;
                     margin-bottom: 20px;
 
                     @include responsive('mobile-h') {
